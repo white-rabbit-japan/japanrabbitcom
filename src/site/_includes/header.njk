@@ -1,14 +1,17 @@
 <header>
-  {# <ul class="nav">
+  <ul class="nav">
     <li>
-      <a href="/">home<small>where the heart is</small></a>
+      <a href="/">home<small>where the heart is</small>
+      </a>
     </li>
-    
+
     <li>
-      <a href="/about">about<small>all about this</small></a>
+      <a href="/about">About<small>our roadmap</small>
+      </a>
     </li>
-  </ul> #}
-  <img width=880 src="/images/japanrabbit.webp"/>
+  </ul>
   <h1>{{ title }}</h1>
-  {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
+  {%- if subtitle %}
+    <p class="subtitle">{{ subtitle | safe }}</p>
+  {% endif %}
 </header>
