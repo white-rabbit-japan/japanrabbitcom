@@ -1,5 +1,8 @@
 <header>
+
   <ul class="nav">
+    <img class="logo" width=90 src="/images/jr-logo-red.png"/>
+
     <li>
       <a href="/">home<small>where the heart is</small>
       </a>
@@ -10,8 +13,10 @@
       </a>
     </li>
   </ul>
+
   <h1>{{ title }}</h1>
   {%- if subtitle %}
     <p class="subtitle">{{ subtitle | safe }}</p>
   {% endif %}
+
 </header>
