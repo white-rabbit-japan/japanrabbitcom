@@ -35,8 +35,8 @@ query {
 
     <Features />
 
-    <Reviews />
+    <!-- <Reviews /> -->
 
-    <Quote />
+    <!-- <Quote /> -->
   </Layout>
 </template>

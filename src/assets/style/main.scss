@@ -18,14 +18,14 @@ a {
 @tailwind utilities;
 
 .container {
-  @apply px-6 max-w-full;
+  @apply px-36 max-w-full;
 
   @screen xxxlUp {
     max-width: theme('screens.xxxlUp.min');
   }
 
   @screen mdDown {
-    @apply px-5;
+    @apply px-12;
   }
 
   @screen sm {

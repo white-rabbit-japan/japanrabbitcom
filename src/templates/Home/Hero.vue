@@ -7,14 +7,14 @@ export default {
 </script>
 
 <template>
-  <div :class="$style.hero" class="relative mt-44">
+  <div :class="$style.hero" class="relative mt-52">
     <div class="container relative flex flex-col h-full mx-auto sm:text-center">
-      <div class="z-10 max-w-lg pt-20 pb-8 pr-2 sm:mt-12">
-        <h2 class="text-base italic font-light mb-14 text-gray-strong">
+      <div class="z-10 max-w-sm pt-20 pr-2 sm:mt-12">
+        <h2 class="mb-10 text-base italic font-light text-gray-strong">
           {{ $t('home.hero.subtitle') }}
         </h2>
 
-        <h1 class="font-semibold leading-tight text-gray-strong text-4xl+">
+        <h1 class="font-bold leading-tight text-gray-strong text-4xl+">
           {{ $t('home.hero.title') }}
         </h1>
         <JrButton
