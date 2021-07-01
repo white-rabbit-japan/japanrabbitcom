@@ -1,8 +1,8 @@
 <script>
-import BButton from '~/components/BButton'
+import JrButton from '~/components/JrButton'
 
 export default {
-  components: { BButton },
+  components: { JrButton },
 }
 </script>
 
@@ -25,7 +25,7 @@ export default {
             {{ $t('home.quote.link') }}
           </g-link>
         </p>
-        <BButton
+        <JrButton
           :text="$t('home.quote.cta')"
           class="inline-block mt-8"
           cta="signup"

@@ -1,8 +1,8 @@
 <script>
-import BButton from '~/components/BButton'
+import JrButton from '~/components/JrButton'
 
 export default {
-  components: { BButton },
+  components: { JrButton },
 }
 </script>
 
@@ -20,7 +20,7 @@ export default {
         >
           {{ $t('home.hero.subtitle') }}
         </h2>
-        <BButton
+        <JrButton
           :text="$t('home.hero.cta')"
           :secondary="true"
           class="inline-block mb-3 text-lg mdUp:mt-16"

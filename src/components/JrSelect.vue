@@ -21,7 +21,7 @@ export default {
   <div class="relative inline-block w-full">
     <select
       :class="$style.select"
-      class="block w-full py-1 pl-4 pr-16 text-sm leading-tight bg-transparent border border-gray-strong rounded-lg rounded-bl-none appearance-none focus:outline-none focus:shadow-outline"
+      class="block w-full py-1 pl-4 pr-16 text-sm leading-tight bg-transparent border rounded-lg rounded-bl-none appearance-none border-gray-strong focus:outline-none focus:shadow-outline"
       :value="value[itemValue]"
       @change="
         $emit(
@@ -42,7 +42,7 @@ export default {
     </select>
 
     <div
-      class="absolute inset-y-0 right-0 flex items-center px-4 text-gray-strong border-l border-gray-strong pointer-events-none"
+      class="absolute inset-y-0 right-0 flex items-center px-4 border-l pointer-events-none text-gray-strong border-gray-strong"
     >
       <span :class="$style.arrow" />
     </div>

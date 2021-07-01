@@ -1,11 +1,11 @@
 <script>
-import BButton from '~/components/BButton.vue'
+import JrButton from '~/components/JrButton.vue'
 import NavLink from './NavLink'
 import Logo from '~/assets/img/japanrabbit-logo.svg?inline'
 
 export default {
   name: 'DefaultHeader',
-  components: { NavLink, BButton, Logo },
+  components: { NavLink, JrButton, Logo },
   props: {
     hideLinks: {
       type: Boolean,
@@ -67,7 +67,7 @@ export default {
           />
 
           <li class="lgDown:mb-5">
-            <BButton
+            <JrButton
               :text="$t('layouts.default.header.cta')"
               class="table mx-auto xlUp:ml-8"
               cta="login"
