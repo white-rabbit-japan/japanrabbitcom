@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div v-if="$page" class="container py-16 mx-auto text-gray sm:py-8">
-      <div class="text-4xl text-center font-sansTitle">
+      <div class="text-4xl text-center">
         <h1 class="px-2" v-html="$page.doc.title" />
       </div>
 

@@ -3,7 +3,7 @@
     <div
       class="container flex-wrap mx-auto my-20 text-center text-gray mdDown:pt-16 mdDown:pb-8"
     >
-      <h3 class="mb-12 text-4xl mdDown:text-3xl font-sansTitle">
+      <h3 class="mb-12 text-4xl mdDown:text-3xl">
         {{ parent.$t('home.reviews.title') }}
       </h3>
 

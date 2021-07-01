@@ -62,7 +62,7 @@ export default {
     <div
       class="container flex-wrap mx-auto my-24 text-center text-gray mdDown:pt-8"
     >
-      <h3 class="mb-12 text-4xl mdDown:text-3xl font-sansTitle">
+      <h3 class="mb-12 text-4xl mdDown:text-3xl">
         {{ $t('home.reasons.title') }}
       </h3>
       <div class="flex flex-wrap">

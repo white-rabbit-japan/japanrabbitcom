@@ -54,7 +54,7 @@ export default {
               class="w-12 h-12 rounded-lg shadow-inner"
               :style="{ backgroundColor: color.code }"
             ></div>
-            <div class="pl-1 ml-2 text-xs leading-none text-gray-800">
+            <div class="pl-1 ml-2 text-xs leading-none text-gray-strong">
               <div class="font-semibold">{{ color.name }}</div>
               <div class="mt-1 font-normal opacity-75">{{ color.code }}</div>
             </div>
@@ -67,7 +67,7 @@ export default {
 
 <style lang="scss" module>
 .title {
-  @apply text-4xl font-sansTitle text-center;
+  @apply text-4xl text-center;
 
   @screen mdDown {
     @apply text-3xl;
