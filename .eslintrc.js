@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: '2018',
+    ecmaVersion: '2021',
     node: true,
   },
   extends: [
@@ -12,8 +12,6 @@ module.exports = {
     'standard',
     // https://github.com/prettier/eslint-config-prettier
     'prettier',
-    'prettier/standard',
-    'prettier/vue',
     // https://github.com/sindresorhus/eslint-plugin-unicorn
     'plugin:unicorn/recommended',
     // https://github.com/mysticatea/eslint-plugin-node
@@ -23,6 +21,11 @@ module.exports = {
   rules: {
     'no-debugger': 'off',
     'no-console': 'off',
+
+    'unicorn/prefer-module': 'off',
+    'unicorn/no-array-reduce': 'off',
+    'unicorn/no-null': 'off',
+    'unicorn/no-document-cookie': 'off',
 
     'vue/no-v-html': 'off',
 

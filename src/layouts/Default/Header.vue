@@ -23,7 +23,15 @@ export default {
 <template>
   <header class="z-10 bg-purple-100">
     <nav
-      class="container flex flex-wrap items-center justify-between mx-auto mdUp:py-2 xlUp:py-4"
+      class="
+        container
+        flex flex-wrap
+        items-center
+        justify-between
+        mx-auto
+        mdUp:py-2
+        xlUp:py-4
+      "
     >
       <div>
         <component
@@ -52,7 +60,13 @@ export default {
         </div>
 
         <ul
-          class="flex items-center flex-initial w-auto lgDown:w-full lgDown:mt-8"
+          class="
+            flex
+            items-center
+            flex-initial
+            w-auto
+            lgDown:w-full lgDown:mt-8
+          "
           :class="isMenuOpen ? 'lgDown:block' : 'lgDown:hidden'"
         >
           <NavLink :to="$tp('/')" t-key="home" />

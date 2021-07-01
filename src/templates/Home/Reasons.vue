@@ -60,7 +60,14 @@ export default {
 <template>
   <div>
     <div
-      class="container flex-wrap mx-auto my-24 text-center text-purple-100 mdDown:pt-8"
+      class="
+        container
+        flex-wrap
+        mx-auto
+        my-24
+        text-center text-purple-100
+        mdDown:pt-8
+      "
     >
       <h3 class="mb-12 text-4xl mdDown:text-3xl font-sansTitle">
         {{ $t('home.reasons.title') }}

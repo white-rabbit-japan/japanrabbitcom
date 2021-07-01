@@ -70,7 +70,7 @@ module.exports = {
       use: '@gridsome/plugin-sitemap',
       options: {
         exclude: ['/en/', '/en/*'],
-        cacheTime: 600000, // default
+        cacheTime: 600_000, // default
       },
     },
     // {

@@ -37,7 +37,17 @@ query {
 <template>
   <footer class="font-sans text-white" :class="$style.footer">
     <div
-      class="container flex flex-col items-center justify-between pt-24 pb-8 mx-auto text-base sm:text-sm"
+      class="
+        container
+        flex flex-col
+        items-center
+        justify-between
+        pt-24
+        pb-8
+        mx-auto
+        text-base
+        sm:text-sm
+      "
     >
       <div class="flex flex-row justify-between w-full mdDown:flex-col">
         <!-- MAIN -->

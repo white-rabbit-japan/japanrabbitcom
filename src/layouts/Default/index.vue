@@ -19,7 +19,14 @@ export default {
 
 <template>
   <div
-    class="flex flex-col min-h-screen font-sans leading-normal bg-gray-700 content-wrapper"
+    class="
+      flex flex-col
+      min-h-screen
+      font-sans
+      leading-normal
+      bg-gray-700
+      content-wrapper
+    "
   >
     <Header :class="headerClass" :hide-links="hidden" />
 

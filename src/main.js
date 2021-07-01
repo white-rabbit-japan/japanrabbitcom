@@ -41,7 +41,10 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   )
 
   addMeta('og:image', 'https://japanrabbit.com/img/japanrabbit-sns.png')
-  addMeta('og:image:secure_url', 'https://japanrabbit.com/img/japanrabbit-sns.png')
+  addMeta(
+    'og:image:secure_url',
+    'https://japanrabbit.com/img/japanrabbit-sns.png'
+  )
   addMeta('og:image:alt', 'Japan Rabbit: Proxy-buying from Japan')
   addMeta('og:image:width', '1200')
   addMeta('og:image:height', '630')
@@ -68,11 +71,10 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     // Import languages here in development
     // for HOT MODULE RELOAD
     const { SUPPORTED_LOCALES } = require('./i18n/locales')
-    SUPPORTED_LOCALES.forEach((locale) =>
+    for (const locale of SUPPORTED_LOCALES)
       appOptions.i18n.setLocaleMessage(
         locale,
         require(`./i18n/translations/${locale}.yml`)
       )
-    )
   }
 }
