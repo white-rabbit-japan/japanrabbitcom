@@ -31,7 +31,7 @@ export default {
           :to="$tp('/')"
           aria-label="home"
         >
-          <Logo class="w-40 pr-6 mt-1" alt="Japan Rabbit logo" />
+          <Logo class="mt-1 w-36 text-primary" alt="Japan Rabbit logo" />
         </component>
       </div>
 
@@ -55,16 +55,13 @@ export default {
           class="flex items-center flex-initial w-auto lgDown:w-full lgDown:mt-8"
           :class="isMenuOpen ? 'lgDown:block' : 'lgDown:hidden'"
         >
-          <NavLink :to="$tp('/')" t-key="home" />
+          <!-- <NavLink :to="$tp('/')" t-key="home" /> -->
           <!-- <NavLink
           to="https://www.whiterabbitexpress.com/about/"
           t-key="aboutUs"
         /> -->
-          <NavLink to="https://support.japanrabbit.com/" t-key="contact" />
-          <NavLink
-            to="https://support.japanrabbit.com/category/343-account"
-            t-key="faq"
-          />
+          <!-- <NavLink to="https://support.japanrabbit.com/" t-key="contact" /> -->
+          <NavLink to="https://support.japanrabbit.com/" t-key="help" />
 
           <li class="lgDown:mb-5">
             <JrButton

@@ -29,11 +29,11 @@ query {
   <Layout header-class="w-full xlUp:absolute xlUp:bg-transparent">
     <Hero />
 
-    <Features />
+    <Reasons />
 
     <Why />
 
-    <Reasons />
+    <Features />
 
     <Reviews />
 

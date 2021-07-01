@@ -2,16 +2,13 @@ layouts:
   default:
     header:
       home: "Home"
-      aboutUs: "About Us"
-      pricing: "Pricing"
-      contact: "Contact"
-      faq: "FAQ"
+      help: "Help"
       cta: "Sign-in"
     footer:
       about: "About"
       sister: "Sister Company"
-      wreTitle: "White Rabbit Express"
-      wreDesc: "Buy-and-ship services for Japanese products"
+      blkTitle: "Blackship"
+      blkDesc: "The best package forwarding from Japan"
       terms: "Terms"
       privacy: "Privacy"
       license: "License"
@@ -26,12 +23,11 @@ notFound:
   title: "Not Found"
 
 home:
-  title: "Package Forwarding from Japan"
+  title: "Proxy-buying from Japan"
   hero:
-    title: "Package forwarding from Japan that puts you in the pilot seat."
-    subtitle: "From the creators of White Rabbit Express."
+    title: "Anywhere, anyone can buy from Japan."
+    subtitle: "Formerly White Rabbit Express"
     cta: "Get Started"
-    ctaSub: "It takes just minutes to apply for your own address in Japan."
   features:
     readReview: "Read full review on Trustpilot"
     storageFeat:

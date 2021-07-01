@@ -25,7 +25,7 @@
 
 <style lang="scss" module>
 .link {
-  @apply relative text-gray-strong no-underline font-medium min-w-full px-2 leading-relaxed;
+  @apply relative text-primary no-underline font-medium min-w-full px-2 leading-relaxed;
 
   transition: all 0.2s ease;
 
@@ -41,8 +41,6 @@
   }
 
   &:hover {
-    @apply text-primary;
-
     &::after {
       left: 2.5%;
       width: 95%;
@@ -51,8 +49,6 @@
 }
 
 .activeLink {
-  @apply text-primary #{!important};
-
   &::after {
     left: 2.5%;
     width: 95%;
