@@ -9,7 +9,7 @@ export default {
       type: String,
       default: '',
     },
-    secondary: {
+    success: {
       type: Boolean,
       default: false,
     },
@@ -39,10 +39,9 @@ export default {
     :target="cta ? '_self' : '_blank'"
     :class="[
       $style.button,
-      secondary
-        ? 'bg-gray hover:bg-gray-strong'
-        : 'bg-primary hover:bg-primary-soft',
+      success ? 'bg-success' : 'bg-primary hover:bg-primary-soft',
     ]"
+    class="px-7 py-1.5 font-sans text-white no-underline rounded-2xl"
     v-bind="$attrs"
   >
     <slot>{{ text }}</slot>
@@ -59,9 +58,6 @@ query {
 
 <style lang="scss" module>
 .button {
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.05),
-    0 0.5px 1.5px 0 rgba(0, 0, 0, 0.1),
-    inset 0 0.5px 0 0 rgba(255, 255, 255, 0.1);
-  @apply no-underline rounded-lg text-white py-3 px-8 font-sans;
+  box-shadow: 0 3px 6px #00000029;
 }
 </style>
