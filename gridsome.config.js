@@ -47,7 +47,7 @@ module.exports = {
         messages: SUPPORTED_LANGUAGES.reduce(
           (acc, l) => ({
             ...acc,
-            [l.locale]: yaml.safeLoad(
+            [l.locale]: yaml.load(
               // @ts-ignore
               fs.readFileSync(
                 path.resolve(`./src/i18n/translations/${l.locale}.yml`)

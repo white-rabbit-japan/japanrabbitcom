@@ -7,6 +7,7 @@ const breakpoints = {
 }
 
 module.exports = {
+  mode: 'jit',
   corePlugins: { container: false },
   breakpoints,
   theme: {
@@ -119,22 +120,25 @@ module.exports = {
     // Some useful comment
   ],
   purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    mode: 'all',
     content: [
       'src/index.html',
       'src/**/*.js',
       'src/**/*.vue',
       'content/**/*.md',
     ],
-    whitelist: [
-      'html',
-      'body',
-      'img',
-      'a',
-      'g-image',
-      'g-image--lazy',
-      'g-image--loaded',
-    ],
-    // Whiltelist FontAwesome
-    whitelistPatterns: [/^fa-/, /-fa$/],
-  },
+    options: {
+      safelist: [
+        'html',
+        'body',
+        'img',
+        'a',
+        'g-image',
+        'g-image--lazy',
+        'g-image--loaded',
+        /^fa-/, /-fa$/
+      ],
+    }
+  }
 }
