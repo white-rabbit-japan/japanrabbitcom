@@ -7,7 +7,7 @@ const breakpoints = {
 }
 
 module.exports = {
-  mode: 'jit',
+  // mode: 'jit',
   corePlugins: { container: false },
   breakpoints,
   theme: {
@@ -55,6 +55,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Proxima Nova',
         'Open Sans',
         'Roboto',
         '-apple-system',
@@ -71,6 +72,7 @@ module.exports = {
       ],
       sansTitle: [
         '"Signika"',
+        'Proxima Nova',
         'Open Sans',
         'Roboto',
         '-apple-system',
