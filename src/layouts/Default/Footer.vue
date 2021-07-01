@@ -9,7 +9,12 @@ export default {
       return []
     },
     aboutLinks() {
-      return []
+      return [
+        {
+          key: 'calculator',
+          to: 'https://app-staging.japanrabbit.com/shipping-calculator',
+        },
+      ]
     },
 
     sns() {
@@ -35,15 +40,15 @@ query {
 </static-query>
 
 <template>
-  <footer class="font-sans text-white" :class="$style.footer">
+  <footer class="font-sans text-white bg-gray-strong">
     <div
-      class="container flex flex-col items-center justify-between pt-24 pb-8 mx-auto text-base sm:text-sm"
+      class="container flex flex-col items-center justify-between pt-12 pb-8 mx-auto text-base sm:text-sm"
     >
       <div class="flex flex-row justify-between w-full mdDown:flex-col">
         <!-- MAIN -->
         <div class="w-2/4 mdDown:w-auto">
-          <Logo class="w-40 pr-6 mt-1 mb-3" alt="Japan Rabbit logo" />
-          <p class="pr-6 text-gray mdUp:max-w-sm">
+          <Logo class="w-40 mb-3 -mt-4 text-primary" alt="Japan Rabbit logo" />
+          <p class="pr-6 mt-6 text-white mdUp:max-w-sm">
             {{ $t('layouts.default.footer.siteDescription') }}
           </p>
           <div class="my-6">
@@ -51,23 +56,23 @@ query {
               v-for="icon in sns"
               :key="icon.name"
               :to="icon.to"
-              class="mr-5 text-xs"
+              class="mr-5 text-xs text-white"
             >
               <FA :name="icon.name" size="2x" fixed-width />
             </g-link>
           </div>
-          <div class="text-gray-300">
+          <div class="text-white">
             {{
               $t('layouts.default.footer.copyright', [new Date().getFullYear()])
             }}
           </div>
         </div>
 
-        <hr class="my-6 border-gray-300 lgUp:hidden" />
+        <hr class="my-6 border-white lgUp:hidden" />
 
         <!-- ABOUT -->
         <div class="w-1/4 mb-4 mdDown:w-auto">
-          <div class="mb-3 text-xl text-gray sm:text-lg">
+          <div class="mb-3 text-xl text-white sm:text-lg">
             {{ $t('layouts.default.footer.about') }}
           </div>
           <ul>
@@ -78,7 +83,7 @@ query {
             >
               <g-link
                 :to="link.to"
-                class="text-gray-300 no-underline hover:text-gray-200"
+                class="text-white no-underline hover:text-gray-soft"
                 >{{ $t('layouts.default.footer.' + link.key) }}</g-link
               >
             </li>
@@ -87,15 +92,25 @@ query {
 
         <!-- SISTER -->
         <div class="w-1/4 mdDown:w-auto">
-          <div class="mb-3 text-xl text-gray sm:text-lg">
+          <div class="mb-3 text-xl text-white sm:text-lg">
             {{ $t('layouts.default.footer.sister') }}
           </div>
-          <p class="font-light text-gray-300">
-            {{ $t('layouts.default.footer.wreDesc') }}
+          <p>
+            <a
+              href="https://blackship.com"
+              target="_blank"
+              rel="noopener"
+              class="font-light no-underline text-blackship"
+            >
+              {{ $t('layouts.default.footer.blkTitle') }}
+            </a>
+          </p>
+          <p class="font-light text-white">
+            {{ $t('layouts.default.footer.blkDesc') }}
           </p>
         </div>
 
-        <hr class="my-6 border-gray-300 lgUp:hidden" />
+        <hr class="my-6 border-gray-soft lgUp:hidden" />
       </div>
 
       <!-- TERMS -->
@@ -103,7 +118,7 @@ query {
         <li v-for="link in siteLinks" :key="link.key" class="p-2">
           <g-link
             :to="link.to"
-            class="no-underline text-gray hover:text-white"
+            class="text-white no-underline hover:text-gray-soft"
             >{{ $t('layouts.default.footer.' + link.key) }}</g-link
           >
         </li>
@@ -111,9 +126,3 @@ query {
     </div>
   </footer>
 </template>
-
-<style lang="scss" module>
-.footer {
-  background-color: rgba(0, 0, 0, 0.95);
-}
-</style>
