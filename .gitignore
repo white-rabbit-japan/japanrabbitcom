@@ -1,0 +1,12 @@
+*.log
+.cache
+.DS_Store
+src/.temp
+node_modules
+dist
+.env.*.local
+static/rss.xml
+
+**/_*
+!**/_redirects
+!**/_headers

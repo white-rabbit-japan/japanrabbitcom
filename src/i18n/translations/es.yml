@@ -1,0 +1,9 @@
+layouts:
+  default:
+    header:
+      home: "Home"
+      aboutUs: "Sobre nosotros"
+      pricing: "Precios"
+      contact: "Contacto"
+      faq: "FAQ"
+      cta: "Log in"

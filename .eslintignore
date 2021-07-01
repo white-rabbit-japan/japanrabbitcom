@@ -1,0 +1,8 @@
+**/tests/unit/coverage/**
+**/node_modules/**
+**/dist/**
+**/server/database/seed/**/*
+!**/server/database/seed/**/*.js
+**/server/**/*generated*
+**/_*
+**/.temp/**

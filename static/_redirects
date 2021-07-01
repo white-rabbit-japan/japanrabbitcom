@@ -1,0 +1,17 @@
+# Proxy backend to avoid CORS
+/analytics/segment/*  https://api.segment.io/:splat  200
+/analytics/amplitude/*  https://api.amplitude.com/:splat  200
+/analytics/mixpanel/*  https://api.mixpanel.com/:splat  200
+/analytics/segment-cdn/*  https://cdn.segment.com/:splat  200
+
+# Redirect to in-app URL
+/shipping-calculator https://app.japanrabbit.com/shipping-calculator 301!
+/calculator https://app.japanrabbit.com/shipping-calculator 301!
+
+# Redirect default Netlify subdomain to primary domain
+https://japanrabbit-static.netlify.com/* https://japanrabbit.com/:splat 301!
+https://beta.japanrabbit.com/* https://japanrabbit.com/:splat 301!
+
+
+# wildcard redirects
+/en/* /:splat 301

@@ -1,0 +1,88 @@
+layouts:
+  default:
+    header:
+      home: "Home"
+      aboutUs: "About Us"
+      pricing: "Pricing"
+      contact: "Contact"
+      faq: "FAQ"
+      cta: "Sign-in"
+    footer:
+      about: "About"
+      sister: "Sister Company"
+      wreTitle: "White Rabbit Express"
+      wreDesc: "Buy-and-ship services for Japanese products"
+      terms: "Terms"
+      privacy: "Privacy"
+      license: "License"
+      siteDescription: "Pioneers of proxy-buying from Japan. We treat everyone like a VIP. Innovative, customer-focused, and honest. Shop any Japanese store, simple and easy."
+      copyright: "© 2021 Japan Rabbit "
+      fees: "Pricing"
+      calculator: "Shipping Calculator"
+      policies: "Policies"
+      whatsnew: "What’s New"
+
+notFound:
+  title: "Not Found"
+
+home:
+  title: "Package Forwarding from Japan"
+  hero:
+    title: "Package forwarding from Japan that puts you in the pilot seat."
+    subtitle: "From the creators of White Rabbit Express."
+    cta: "Get Started"
+    ctaSub: "It takes just minutes to apply for your own address in Japan."
+  features:
+    readReview: "Read full review on Trustpilot"
+    storageFeat:
+      title: "Free Storage for 45 days"
+      shortDescription: "We’ll keep your packages safe until you are ready to ship."
+      sub: ""
+      description: "Japan Rabbit allows you to have your own personal warehouse free for 45 days. Pricing is reasonable and affordable."
+    customsFeat:
+      title: "Customs control"
+      shortDescription: "Declare your own Customs value."
+      sub: ""
+      description: "Japan Rabbit makes filling out a Customs Form very easy... just choose Gift or Merchandise, enter the value and description of the item, and you are done!"
+    supportFeat:
+      title: "How can we help?"
+      shortDescription: "Our experts are here to help by chat or email."
+      sub: ""
+      description: "Customer service is consistently very helpful, patient, hardworking, smart, knowledgeable, efficient, effective! I am so won over!"
+    expressFeat:
+      title: "Express Processing*"
+      shortDescription: "Pay to expedite your requests when time is critical."
+      description: "Fast response to emails regarding my questions! Fast turnaround process from receiving to repacking, sending photos, and shipping out!"
+      sub: "* Additional fees apply."
+  why:
+    title: "Why Japan Rabbit?"
+    description: "We want to make forwarding from Japan as delightful and straightforward as possible. But we know you might have a few questions. Our Customer Service Team has the highest ratings in the industry. We are here to help."
+    invitation: "If you tried our service way back when, we invite you to try it again. The new Japan Rabbit is unlike any earlier version. We’d love to welcome you back."
+    cta: "Get Started"
+  reasons:
+    title: "More Reasons to Use Japan Rabbit"
+    repack: "Free repacking"
+    consolidation: "Consolidation"
+    notifications: "Get Notifications"
+    mobile: "Mobile Friendly"
+    photos: "Package Photos"
+    addresses: "Multiple Shipping Addresses"
+    import: "Import from"
+    pricing: "Loyalty Rewards"
+  wre:
+    title: "Need help buying from Japan?"
+    subtitle: "White Rabbit Express takes the pain out of purchasing."
+    cta: "Learn More"
+  reviews:
+    title: "Thousands of people trust Japan Rabbit"
+    outOf: "{0} out of {1}"
+  quote:
+    text: "Reliable and fast shipping, excellent customer service, and an easy to use web interface. Every package is well packed. You can tell that they care that you get your items quickly, safely, and neatly. Highly recommended."
+    link: "Read full review on Trustpilot"
+    cta: "Get Started"
+
+style:
+  title: "Style"
+  general:
+    brandAndStyleGuide: "Brand and Style Guide"
+    colors: "Colors"

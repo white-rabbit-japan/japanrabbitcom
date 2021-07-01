@@ -1,0 +1,108 @@
+{
+  // ===
+  // Spacing
+  // ===
+
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  // ===
+  // Files
+  // ===
+
+  "files.exclude": {
+    "**/*.log": true,
+    "**/*.log*": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+  "files.associations": {
+    ".markdownlintrc": "jsonc",
+    "**/snippets/*.json": "jsonc"
+  },
+
+  // ===
+  // Event Triggers
+  // ===
+
+  "editor.formatOnSave": true,
+  "eslint.run": "onSave",
+  "vetur.format.enable": false,
+  "vetur.completion.scaffoldSnippetSources": {
+    "user": "🗒️",
+    "workspace": "💼",
+    "vetur": ""
+  },
+  "prettier.disableLanguages": [],
+
+  // ===
+  // HTML
+  // ===
+
+  "html.format.enable": false,
+  "vetur.validation.template": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  },
+  "vetur.completion.tagCasing": "initial",
+
+  // ===
+  // JS(ON)
+  // ===
+
+  "jest.autoEnable": false,
+  "jest.enableCodeLens": false,
+  "javascript.format.enable": false,
+  "json.format.enable": false,
+  "vetur.validation.script": false,
+
+  // ===
+  // CSS
+  // ===
+
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "vetur.validation.style": false,
+
+  // ===
+  // MARKDOWN
+  // ===
+
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  },
+
+  // ===
+  // YAML
+  // ===
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // ===
+  // VUE
+  // ===
+  "vetur.grammar.customBlocks": {
+    "page-query": "graphql",
+    "static-query": "graphql",
+    "PageQuery": "graphql",
+    "StaticQuery": "graphql"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.displayLanguage": "en",
+  "i18n-ally.localesPaths": "[**/i18n/translations]",
+  "i18n-ally.keepFulfilled": true,
+  "i18n-ally.enabledFrameworks": "vue",
+  "i18n-ally.keystyle": "nested"
+}

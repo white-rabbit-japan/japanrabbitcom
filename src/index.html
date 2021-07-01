@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ${htmlAttrs}>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="preconnect"
+      data-resource-type='font'
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      rel="preload"
+      data-resource-type='font'
+      as="style"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+    />
+    <link
+      rel="preload"
+      data-resource-type='font'
+      as="style"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=Signika:300,400,700&display=swap"
+    />
+    <link
+      rel="preload"
+      data-resource-type='font'
+      as="style"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=Caveat&display=swap"
+    />
+    <script type="text/javascript">
+      !(function(e, t, n) {
+        function a() {
+          var e = t.getElementsByTagName('script')[0],
+            n = t.createElement('script')
+          ;(n.type = 'text/javascript'),
+            (n.async = !0),
+            (n.src = 'https://beacon-v2.helpscout.net'),
+            e.parentNode.insertBefore(n, e)
+        }
+        if (
+          ((e.Beacon = n = function(t, n, a) {
+            e.Beacon.readyQueue.push({ method: t, options: n, data: a })
+          }),
+          (n.readyQueue = []),
+          'complete' === t.readyState)
+        )
+          return a()
+        e.attachEvent
+          ? e.attachEvent('onload', a)
+          : e.addEventListener('load', a, !1)
+      })(window, document, window.Beacon || function() {})
+    </script>
+    <script type="text/javascript">
+      window.Beacon('init', '3206cce3-4539-4aba-8e80-807e779cd6dc')
+    </script>
+
+    ${head}
+  </head>
+
+  <body ${bodyAttrs}>
+    ${app} ${scripts}
+
+    <script>
+      var links = document.querySelectorAll('link[data-resource-type="font"]')
+      if (links) {
+        for (i = 0; i < links.length; ++i) {
+          links[i].rel = 'stylesheet'
+        }
+      }
+    </script>
+  </body>
+</html>
