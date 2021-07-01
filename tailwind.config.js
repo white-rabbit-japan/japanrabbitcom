@@ -3,7 +3,7 @@ const breakpoints = {
   md: '768px',
   lg: '960px',
   xl: '1190px',
-  xxl: '1344px',
+  xxl: '1440px',
 }
 
 module.exports = {
@@ -20,29 +20,20 @@ module.exports = {
     colors: {
       black: '#000',
       white: '#fff',
-      gray: {
-        200: '#cdcdcd',
-        300: '#989898',
-        400: '#544a64',
-        500: '#2e2d3f',
-        600: '#3e394c',
-        700: '#201e29', // Background
-        900: '#191226',
+      primary: {
+        DEFAULT: '#E32C1B',
+        soft: '#F64934',
       },
-      purple: {
-        100: '#f5e8ff', // Body text
-        200: '#e1d9f7',
-        400: '#af75dd', // Primary
-        600: '#9b59b6',
-        700: '#8f4baa',
-      },
-      red: {
-        500: '#ee4d4d',
-      },
-      green: {
-        400: '#00c967',
+      success: {
+        DEFAULT: '#06B53C'
       },
       transparent: 'transparent',
+      blackship: '#af75dd', // Blackship primary
+      gray: {
+        soft: '#F6F6F6',
+        DEFAULT: '#55555B',
+        strong: '#544E50',
+      },
     },
     screens: {
       mdUp: { min: breakpoints.sm },

@@ -8,8 +8,8 @@
 </template>
 
 <style lang="scss" module>
-$bg-color: theme('colors.purple.600');
-$text-color: theme('colors.purple.100');
+$bg-color: theme('colors.primary.DEFAULT');
+$text-color: theme('colors.gray.DEFAULT');
 
 .tooltip {
   position: relative;

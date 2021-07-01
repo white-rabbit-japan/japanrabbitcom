@@ -9,16 +9,7 @@ export default {
 <template>
   <div class="bg-gray-500" :class="$style.why">
     <div
-      class="
-        container
-        relative
-        flex flex-wrap
-        h-full
-        mx-auto
-        text-purple-100
-        lgUp:items-center
-        mdDown:pt-8 mdDown:text-center
-      "
+      class="container relative flex flex-wrap h-full mx-auto text-gray lgUp:items-center mdDown:pt-8 mdDown:text-center"
     >
       <div class="z-10 max-w-xl xxlDown:max-w-md mdDown:max-w-full lgUp:pr-4">
         <h3 class="mb-4 text-4xl mdDown:text-3xl font-sansTitle">

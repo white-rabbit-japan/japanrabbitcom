@@ -1,5 +1,5 @@
 <template functional>
-  <li class="xlUp:mr-5 lgDown:mb-6 text-center text-lg">
+  <li class="text-lg text-center xlUp:mr-5 lgDown:mb-6">
     <!-- v-scroll-to="link.to.startsWith('#') ? link.to : 'html'" -->
     <a
       v-if="props.to.includes(':')"
@@ -25,7 +25,7 @@
 
 <style lang="scss" module>
 .link {
-  @apply relative text-gray-700 no-underline font-medium min-w-full px-2 leading-relaxed;
+  @apply relative text-gray-strong no-underline font-medium min-w-full px-2 leading-relaxed;
 
   transition: all 0.2s ease;
 
@@ -37,11 +37,11 @@
     height: 2px;
     content: ' ';
     transition: all 0.2s ease;
-    @apply bg-purple-600;
+    @apply bg-primary;
   }
 
   &:hover {
-    @apply text-purple-600;
+    @apply text-primary;
 
     &::after {
       left: 2.5%;
@@ -51,7 +51,7 @@
 }
 
 .activeLink {
-  @apply text-purple-600 #{!important};
+  @apply text-primary #{!important};
 
   &::after {
     left: 2.5%;

@@ -60,14 +60,7 @@ export default {
 <template>
   <div>
     <div
-      class="
-        container
-        flex-wrap
-        mx-auto
-        my-24
-        text-center text-purple-100
-        mdDown:pt-8
-      "
+      class="container flex-wrap mx-auto my-24 text-center text-gray mdDown:pt-8"
     >
       <h3 class="mb-12 text-4xl mdDown:text-3xl font-sansTitle">
         {{ $t('home.reasons.title') }}
@@ -76,7 +69,7 @@ export default {
         <div
           v-for="(reason, index) in reasons"
           :key="reason.key"
-          class="w-1/4 my-10 border-purple-100 mdDown:w-1/2"
+          class="w-1/4 my-10 border-gray-soft mdDown:w-1/2"
           :class="{ 'xlUp:border-r': (index + 1) % 4 !== 0 }"
         >
           <div class="flex justify-center h-24">

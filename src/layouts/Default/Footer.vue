@@ -37,27 +37,13 @@ query {
 <template>
   <footer class="font-sans text-white" :class="$style.footer">
     <div
-      class="
-        container
-        flex flex-col
-        items-center
-        justify-between
-        pt-24
-        pb-8
-        mx-auto
-        text-base
-        sm:text-sm
-      "
+      class="container flex flex-col items-center justify-between pt-24 pb-8 mx-auto text-base sm:text-sm"
     >
       <div class="flex flex-row justify-between w-full mdDown:flex-col">
         <!-- MAIN -->
         <div class="w-2/4 mdDown:w-auto">
-          <Logo
-            class="w-40 pr-6 mt-1 mb-3"
-            :class="$style.fillPurple"
-            alt="Japan Rabbit logo"
-          />
-          <p class="pr-6 text-purple-200 mdUp:max-w-sm">
+          <Logo class="w-40 pr-6 mt-1 mb-3" alt="Japan Rabbit logo" />
+          <p class="pr-6 text-gray mdUp:max-w-sm">
             {{ $t('layouts.default.footer.siteDescription') }}
           </p>
           <div class="my-6">
@@ -81,7 +67,7 @@ query {
 
         <!-- ABOUT -->
         <div class="w-1/4 mb-4 mdDown:w-auto">
-          <div class="mb-3 text-xl text-purple-200 sm:text-lg">
+          <div class="mb-3 text-xl text-gray sm:text-lg">
             {{ $t('layouts.default.footer.about') }}
           </div>
           <ul>
@@ -101,7 +87,7 @@ query {
 
         <!-- SISTER -->
         <div class="w-1/4 mdDown:w-auto">
-          <div class="mb-3 text-xl text-purple-200 sm:text-lg">
+          <div class="mb-3 text-xl text-gray sm:text-lg">
             {{ $t('layouts.default.footer.sister') }}
           </div>
           <p class="font-light text-gray-300">
@@ -117,7 +103,7 @@ query {
         <li v-for="link in siteLinks" :key="link.key" class="p-2">
           <g-link
             :to="link.to"
-            class="text-purple-200 no-underline hover:text-white"
+            class="no-underline text-gray hover:text-white"
             >{{ $t('layouts.default.footer.' + link.key) }}</g-link
           >
         </li>
@@ -129,9 +115,5 @@ query {
 <style lang="scss" module>
 .footer {
   background-color: rgba(0, 0, 0, 0.95);
-}
-
-.fillPurple {
-  fill: theme('colors.purple.400');
 }
 </style>

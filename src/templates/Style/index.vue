@@ -15,17 +15,16 @@ export default {
   data() {
     return {
       colors: [
-        'green.400',
-        'red.500',
-        'purple.100',
-        'purple.200',
-        'purple.400',
-        'purple.600',
-        'purple.700',
+        'primary.DEFAULT',
+        'primary.soft',
+        'success.DEFAULT',
+        'gray.soft',
+        'gray.DEFAULT',
+        'gray.strong',
       ].map((item) => {
         const [color, grade] = item.split('.')
         return {
-          name: item.toUpperCase().replace('.', ' '),
+          name: item.toUpperCase().replace('.DEFAULT', '').replace('.', ' '),
           code: (theme.colors[color][grade] || '').toUpperCase(),
         }
       }),
@@ -36,7 +35,7 @@ export default {
 <template>
   <Layout>
     <div>
-      <div class="container py-16 mx-auto text-purple-100 sm:py-8">
+      <div class="container py-16 mx-auto text-gray sm:py-8">
         <div class="text-left">
           <h2 :class="$style.title" class="mb-12">
             {{ $t('style.general.brandAndStyleGuide') }}
@@ -95,7 +94,7 @@ export default {
       width: 12px;
       height: 12px;
       content: '';
-      background-color: theme('colors.purple.600');
+      background-color: theme('colors.primary.DEFAULT');
       border-radius: 100%;
     }
   }

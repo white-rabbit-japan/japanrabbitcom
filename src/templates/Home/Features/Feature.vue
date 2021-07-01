@@ -4,16 +4,16 @@
       <slot />
     </div>
 
-    <div class="mt-8 mb-4 text-2xl text-purple-400 font-sansTitle">
+    <div class="mt-8 mb-4 text-2xl text-gray-strong font-sansTitle">
       {{ parent.$t(`${props.tKey}.title`) }}
     </div>
-    <div class="max-w-sm mx-auto text-xl text-purple-200 sm:text-lg">
+    <div class="max-w-sm mx-auto text-xl text-gray sm:text-lg">
       {{ parent.$t(`${props.tKey}.shortDescription`) }}
     </div>
-    <div class="mt-2 text-sm text-purple-400">
+    <div class="mt-2 text-sm text-gray-strong">
       {{ parent.$t(`${props.tKey}.sub`) }}
     </div>
-    <hr class="max-w-sm mx-auto mt-4 mb-2 border-purple-400" />
+    <hr class="max-w-sm mx-auto mt-4 mb-2 border-gray-strong" />
     <div class="relative max-w-sm mx-auto text-gray-300 mdUp:text-left">
       <div class="text-sm text-center mdUp:pl-20">
         <div :class="$style.star" class="inline-block mdUp:absolute">

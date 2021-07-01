@@ -1,14 +1,7 @@
 <template functional>
   <div>
     <div
-      class="
-        container
-        flex-wrap
-        mx-auto
-        my-20
-        text-center text-purple-100
-        mdDown:pt-16 mdDown:pb-8
-      "
+      class="container flex-wrap mx-auto my-20 text-center text-gray mdDown:pt-16 mdDown:pb-8"
     >
       <h3 class="mb-12 text-4xl mdDown:text-3xl font-sansTitle">
         {{ parent.$t('home.reviews.title') }}
@@ -27,7 +20,7 @@
               class="mx-auto"
               alt="trustpilot score"
             />
-            <div class="text-base text-purple-100 mdDown:text-lg">
+            <div class="text-base text-gray mdDown:text-lg">
               {{ parent.$t('home.reviews.outOf', [4.8, 5]) }}
             </div>
           </g-link>
@@ -45,7 +38,7 @@
               class="mx-auto"
               alt="google score"
             />
-            <div class="text-base text-purple-100 mdDown:text-lg">
+            <div class="text-base text-gray mdDown:text-lg">
               {{ parent.$t('home.reviews.outOf', [4.9, 5]) }}
             </div>
           </g-link>
@@ -63,7 +56,7 @@
               class="mx-auto"
               alt="facebook score"
             />
-            <div class="text-base text-purple-100 mdDown:text-lg">
+            <div class="text-base text-gray mdDown:text-lg">
               {{ parent.$t('home.reviews.outOf', [4.9, 5]) }}
             </div>
           </g-link>
@@ -75,7 +68,7 @@
 
 <style lang="scss" module>
 .item {
-  @apply flex-grow h-24 my-10 border-purple-100;
+  @apply flex-grow h-24 my-10 border-gray-soft;
 }
 
 .itemLink {

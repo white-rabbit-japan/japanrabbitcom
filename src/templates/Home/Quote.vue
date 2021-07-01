@@ -9,20 +9,12 @@ export default {
 <template>
   <div class="bg-gray-500" :class="$style.why">
     <div
-      class="container relative h-full mx-auto text-center text-purple-100"
+      class="container relative h-full mx-auto text-center text-gray"
       :class="$style.container"
     >
       <div class="relative z-10 min-h-full">
         <div
-          class="
-            max-w-5xl
-            pt-24
-            mx-auto
-            text-3xl
-            leading-tight
-            mdDown:pt-6 mdDown:text-2xl
-            font-handwriting
-          "
+          class="max-w-5xl pt-24 mx-auto text-3xl leading-tight mdDown:pt-6 mdDown:text-2xl font-handwriting"
         >
           {{ $t('home.quote.text') }}
         </div>

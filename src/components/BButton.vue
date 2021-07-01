@@ -40,8 +40,8 @@ export default {
     :class="[
       $style.button,
       secondary
-        ? 'bg-gray-700 hover:bg-gray-900'
-        : 'bg-purple-600 hover:bg-purple-700',
+        ? 'bg-gray hover:bg-gray-strong'
+        : 'bg-primary hover:bg-primary-soft',
     ]"
     v-bind="$attrs"
   >
