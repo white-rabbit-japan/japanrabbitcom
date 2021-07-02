@@ -85,9 +85,11 @@ query {
     <div
       class="container flex flex-col items-center justify-between pt-10 pb-10 mx-auto text-sm"
     >
-      <div class="flex flex-row justify-between w-full mdDown:flex-col">
+      <div
+        class="flex flex-row justify-between w-full lgDown:flex-wrap lgDown:gap-2"
+      >
         <!-- MAIN -->
-        <div class="w-1/4 pr-6 mdDown:w-auto">
+        <div class="w-1/4 pr-6 lgDown:w-full">
           <Logo
             class="w-40 mb-3 -mt-4 -ml-2 transform scale-90 text-primary"
             alt="Japan Rabbit logo"
@@ -102,16 +104,18 @@ query {
               <FA :name="icon.name" size="2x" fixed-width />
             </g-link>
           </div>
-          <p class="mdUp:max-w-sm">
+          <p class="lgUp:max-w-sm">
             {{ $t('layouts.default.footer.siteDescription') }}
           </p>
         </div>
 
-        <hr class="my-6 border-gray-strong lgUp:hidden" />
+        <hr class="w-full my-6 border-gray-strong xlUp:hidden" />
 
         <!-- SUPPORT -->
-        <div class="w-1/5 mb-4 mdDown:w-auto">
-          <div class="mb-3 text-lg font-bold uppercase text-primary sm:text-lg">
+        <div class="w-1/5 mb-4 whitespace-nowrap">
+          <div
+            class="mb-3 text-lg font-bold uppercase text-primary lgDown:text-lg"
+          >
             {{ $t('layouts.default.footer.support') }}
           </div>
           <ul>
@@ -132,8 +136,10 @@ query {
         </div>
 
         <!-- COMPANY -->
-        <div class="w-1/5 mb-4 mdDown:w-auto">
-          <div class="mb-3 text-lg font-bold uppercase text-primary sm:text-lg">
+        <div class="w-1/5 mb-4 whitespace-nowrap">
+          <div
+            class="mb-3 text-lg font-bold uppercase text-primary lgDown:text-lg"
+          >
             {{ $t('layouts.default.footer.company') }}
           </div>
           <ul>
@@ -154,8 +160,10 @@ query {
         </div>
 
         <!-- SISTER -->
-        <div class="w-1/5 mb-4 mdDown:w-auto">
-          <div class="mb-3 text-lg font-bold uppercase text-primary sm:text-lg">
+        <div class="w-1/5 mb-4 whitespace-nowrap">
+          <div
+            class="mb-3 text-lg font-bold uppercase text-primary lgDown:text-lg"
+          >
             {{ $t('layouts.default.footer.sister') }}
           </div>
           <ul>
@@ -174,8 +182,6 @@ query {
             </li>
           </ul>
         </div>
-
-        <hr class="my-6 border-gray-strong lgUp:hidden" />
       </div>
 
       <!-- TERMS -->
