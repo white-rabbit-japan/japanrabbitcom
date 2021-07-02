@@ -41,7 +41,7 @@ export default {
       $style.button,
       success ? 'bg-success' : 'bg-primary hover:bg-primary-soft',
     ]"
-    class="px-7 py-1.5 font-sans text-white no-underline rounded-2xl"
+    class="px-7 py-1.5 font-sans text-white no-underline rounded-2xl whitespace-nowrap"
     v-bind="$attrs"
   >
     <slot>{{ text }}</slot>

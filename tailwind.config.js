@@ -17,8 +17,9 @@ module.exports = {
         '4xl+': '2.5rem',
       },
       maxWidth: {
+        '48': '12rem',
         '80': '20rem',
-      }
+      },
     },
     colors: {
       black: '#000',
@@ -74,7 +75,6 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       sansTitle: [
-        '"Signika"',
         'Proxima Nova',
         'Open Sans',
         'Roboto',
@@ -92,7 +92,6 @@ module.exports = {
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       handwriting: [
-        'Caveat',
         'Georgia',
         'Cambria',
         '"Times New Roman"',

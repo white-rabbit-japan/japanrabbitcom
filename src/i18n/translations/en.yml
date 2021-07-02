@@ -79,10 +79,9 @@ home:
   reviews:
     title: "Thousands of people trust Japan Rabbit"
     outOf: "{0} out of {1}"
-  quote:
-    text: "Reliable and fast shipping, excellent customer service, and an easy to use web interface. Every package is well packed. You can tell that they care that you get your items quickly, safely, and neatly. Highly recommended."
-    link: "Read full review on Trustpilot"
-    cta: "Get Started"
+  blackship:
+    text: "Package forwarding from Japan."
+    cta: "Get an Address in Japan!"
 
 style:
   title: "Style"

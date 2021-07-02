@@ -4,7 +4,7 @@ import Reasons from './Reasons'
 import Why from './Why'
 import Features from './Features'
 import Reviews from './Reviews'
-import Quote from './Quote'
+import Blackship from './Blackship'
 
 export default {
   name: 'HomeView',
@@ -13,7 +13,7 @@ export default {
       title: this.$t('home.title'),
     }
   },
-  components: { Hero, Reasons, Why, Features, Reviews, Quote },
+  components: { Hero, Reasons, Why, Features, Reviews, Blackship },
 }
 </script>
 
@@ -37,6 +37,6 @@ query {
 
     <!-- <Reviews /> -->
 
-    <!-- <Quote /> -->
+    <Blackship />
   </Layout>
 </template>
