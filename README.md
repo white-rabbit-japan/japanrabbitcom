@@ -2,4 +2,4 @@
 
 ## Deploy
 
-Deploys on commit to [Netlify](https://japanrabbit-static.netlify.com/)
+Deploys on commit to [Netlify](https://japanrabbit.netlify.com/)

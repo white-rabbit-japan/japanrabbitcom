@@ -9,7 +9,7 @@
 /calculator https://app.japanrabbit.com/shipping-calculator 301!
 
 # Redirect default Netlify subdomain to primary domain
-https://japanrabbit-static.netlify.com/* https://japanrabbit.com/:splat 301!
+https://japanrabbit.netlify.com/* https://japanrabbit.com/:splat 301!
 https://beta.japanrabbit.com/* https://japanrabbit.com/:splat 301!
 
 

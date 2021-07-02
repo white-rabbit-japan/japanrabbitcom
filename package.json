@@ -9,7 +9,7 @@
     "precommit": "lint-staged --config ./lint-staged.config.js"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "dependencies": {
     "@fortawesome/fontawesome-pro": "5.x",
