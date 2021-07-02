@@ -16,6 +16,9 @@ module.exports = {
         'xl+': '1.375rem',
         '4xl+': '2.5rem',
       },
+      maxWidth: {
+        '80': '20rem',
+      }
     },
     colors: {
       black: '#000',

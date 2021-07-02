@@ -1,9 +1,9 @@
 <script>
 export default {
   name: 'HomeReasons',
-  computed: {
-    reasons() {
-      return [
+  data() {
+    return {
+      reasons: [
         {
           key: 'preorders',
           image: 'preorder.svg',
@@ -44,13 +44,8 @@ export default {
           image: 'chat.svg',
           imageWidth: 70,
         },
-      ].map((reason) => {
-        return {
-          ...reason,
-          title: this.$t(`home.reasons.${reason.key}`),
-        }
-      })
-    },
+      ],
+    }
   },
 }
 </script>
@@ -58,7 +53,7 @@ export default {
 <template>
   <div>
     <div
-      class="container flex-wrap mx-auto mt-6 mb-24 text-center text-gray-strong mdDown:pt-8"
+      class="container mx-auto mt-6 mb-24 text-center text-gray-strong mdDown:pt-8"
     >
       <h3 class="max-w-4xl mx-auto text-3xl font-semibold mb-28 text-primary">
         {{ $t('home.reasons.title') }}

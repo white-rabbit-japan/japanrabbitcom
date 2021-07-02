@@ -54,27 +54,19 @@ home:
       title: "Live Chat"
       desc: "Chat with us! We are here to help."
   features:
-    readReview: "Read full review on Trustpilot"
-    storageFeat:
-      title: "Free Storage for 45 days"
-      shortDescription: "We’ll keep your packages safe until you are ready to ship."
-      sub: ""
-      description: "Japan Rabbit allows you to have your own personal warehouse free for 45 days. Pricing is reasonable and affordable."
-    customsFeat:
-      title: "Customs control"
-      shortDescription: "Declare your own Customs value."
-      sub: ""
-      description: "Japan Rabbit makes filling out a Customs Form very easy... just choose Gift or Merchandise, enter the value and description of the item, and you are done!"
-    supportFeat:
-      title: "How can we help?"
-      shortDescription: "Our experts are here to help by chat or email."
-      sub: ""
-      description: "Customer service is consistently very helpful, patient, hardworking, smart, knowledgeable, efficient, effective! I am so won over!"
-    expressFeat:
-      title: "Express Processing*"
-      shortDescription: "Pay to expedite your requests when time is critical."
-      description: "Fast response to emails regarding my questions! Fast turnaround process from receiving to repacking, sending photos, and shipping out!"
-      sub: "* Additional fees apply."
+    title: "Get the help you need, every step of the way."
+    vip:
+      title: "We treat everyone like a VIP"
+      desc: "Our experts are here to help by chat or email."
+    quote:
+      title: "Get a Quote, Instantly"
+      desc: "Add the items you want to buy for an instant quote. It’s so fast and simple."
+    storage:
+      title: "45-days Free Storage"
+      desc: "We’ll keep your packages safe until you are ready to ship."
+    moneyback:
+      title: "100% money back guarantee"
+      desc: "We buy your item, or you pay nothing."
   why:
     title: "Why Japan Rabbit?"
     description: "We want to make forwarding from Japan as delightful and straightforward as possible. But we know you might have a few questions. Our Customer Service Team has the highest ratings in the industry. We are here to help."
