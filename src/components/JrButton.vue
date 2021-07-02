@@ -37,10 +37,7 @@ export default {
   <g-link
     :to="link"
     :target="cta ? '_self' : '_blank'"
-    :class="[
-      $style.button,
-      success ? 'bg-success' : 'bg-primary hover:bg-primary-soft',
-    ]"
+    :class="[$style.button, success ? 'bg-success' : 'bg-primary']"
     class="px-7 py-1.5 font-sans text-white no-underline rounded-2xl whitespace-nowrap"
     v-bind="$attrs"
   >
@@ -59,5 +56,9 @@ query {
 <style lang="scss" module>
 .button {
   box-shadow: 0 3px 6px #00000029;
+
+  &:hover {
+    filter: brightness(110%) saturate(110%);
+  }
 }
 </style>
