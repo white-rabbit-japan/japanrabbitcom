@@ -28,7 +28,7 @@ home:
     title: "Anywhere, anyone can buy from Japan."
     subtitle: "Formerly White Rabbit Express"
     cta: "Get Started"
-  features:
+  reasons:
     title: "We’ll handle the ordering, payment, pickup, and shipping—so you don’t have to."
     repack: "Free repacking"
     consolidation: "Consolidation"
@@ -38,7 +38,7 @@ home:
     addresses: "Multiple Shipping Addresses"
     import: "Import from"
     pricing: "Loyalty Rewards"
-  process:
+  features:
     readReview: "Read full review on Trustpilot"
     storageFeat:
       title: "Free Storage for 45 days"

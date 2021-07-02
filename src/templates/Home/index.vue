@@ -1,8 +1,8 @@
 <script>
 import Hero from './Hero'
-import Features from './Features'
+import Reasons from './Reasons'
 import Why from './Why'
-import Process from './Process'
+import Features from './Features'
 import Reviews from './Reviews'
 import Quote from './Quote'
 
@@ -13,7 +13,7 @@ export default {
       title: this.$t('home.title'),
     }
   },
-  components: { Hero, Features, Why, Process, Reviews, Quote },
+  components: { Hero, Reasons, Why, Features, Reviews, Quote },
 }
 </script>
 
@@ -29,9 +29,9 @@ query {
   <Layout>
     <Hero />
 
-    <Features />
+    <Reasons />
 
-    <!-- <Process /> -->
+    <!-- <Features /> -->
 
     <!-- <Why /> -->
 
