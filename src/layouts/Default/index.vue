@@ -43,6 +43,7 @@ query {
 .main {
   position: relative;
   z-index: 1;
+  padding-bottom: 64px;
 
   &::before {
     position: absolute;

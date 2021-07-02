@@ -30,14 +30,30 @@ home:
     cta: "Get Started"
   reasons:
     title: "We’ll handle the ordering, payment, pickup, and shipping—so you don’t have to."
-    repack: "Free repacking"
-    consolidation: "Consolidation"
-    notifications: "Get Notifications"
-    mobile: "Mobile Friendly"
-    photos: "Package Photos"
-    addresses: "Multiple Shipping Addresses"
-    import: "Import from"
-    pricing: "Loyalty Rewards"
+    preorders:
+      title: "Pre-orders"
+      desc: "Reserve items months in advance."
+    pickup:
+      title: "In-store Pickup"
+      desc: "Shop physical stores too. Additional fees may apply."
+    limitedEditions:
+      title: "Limited Editions"
+      desc: "Buy limited-edition and bonus items."
+    auctions:
+      title: "Auction Bidding"
+      desc: "Bid on Yahoo!Auctions."
+    talkSellers:
+      title: "Communicate with Sellers"
+      desc: "We can relay messages between you and the seller."
+    payment:
+      title: "Cross-border Payment"
+      desc: "We’ll handle payment for you, whether by cash, furikomi, konibini pay, or credit card."
+    shipping:
+      title: "Cross-border Shipping"
+      desc: "Ship by Japan Post, FedEx, or DHL."
+    chat:
+      title: "Live Chat"
+      desc: "Chat with us! We are here to help."
   features:
     readReview: "Read full review on Trustpilot"
     storageFeat:

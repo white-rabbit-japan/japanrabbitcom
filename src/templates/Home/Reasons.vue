@@ -5,45 +5,43 @@ export default {
     reasons() {
       return [
         {
-          key: 'repack',
-          image: 'free-repacking.svg',
+          key: 'preorders',
+          image: 'preorder.svg',
           imageWidth: 70,
         },
         {
-          key: 'consolidation',
-          image: 'consolidation.svg',
+          key: 'pickup',
+          image: 'in-store-pickup.svg',
+          imageWidth: 70,
+        },
+        {
+          key: 'limitedEditions',
+          image: 'limited-editions.svg',
           imageWidth: 90,
         },
         {
-          key: 'notifications',
-          image: 'get-notifications.svg',
-          imageWidth: 60,
+          key: 'auctions',
+          image: 'auctions.svg',
+          imageWidth: 80,
         },
         {
-          key: 'mobile',
-          image: 'mobile-friendly.svg',
-          imageWidth: 45,
+          key: 'talkSellers',
+          image: 'talk-to-sellers.svg',
+          imageWidth: 80,
         },
         {
-          key: 'photos',
-          image: 'package-photos.svg',
-          imageWidth: 72,
+          key: 'payment',
+          image: 'payment.svg',
+          imageWidth: 80,
         },
         {
-          key: 'addresses',
-          image: 'multiple-shipping-addresses.svg',
-          imageWidth: 66,
+          key: 'shipping',
+          image: 'shipping.svg',
+          imageWidth: 70,
         },
         {
-          key: 'import',
-          image: 'whiterabbit.svg',
-          imageWidth: 94,
-          linkText: 'White Rabbit Express',
-          link: 'example.com',
-        },
-        {
-          key: 'pricing',
-          image: 'loyalty-rewards.svg',
+          key: 'chat',
+          image: 'chat.svg',
           imageWidth: 70,
         },
       ].map((reason) => {
@@ -62,15 +60,14 @@ export default {
     <div
       class="container flex-wrap mx-auto mt-6 mb-24 text-center text-gray-strong mdDown:pt-8"
     >
-      <h3 class="max-w-4xl mx-auto mb-16 text-3xl font-semibold text-primary">
+      <h3 class="max-w-4xl mx-auto text-3xl font-semibold mb-28 text-primary">
         {{ $t('home.reasons.title') }}
       </h3>
-      <div class="flex flex-wrap">
+      <div class="flex flex-wrap justify-between">
         <div
           v-for="(reason, index) in reasons"
           :key="reason.key"
-          class="w-1/4 my-10 border-gray-soft mdDown:w-1/2"
-          :class="{ 'xlUp:border-r': (index + 1) % 4 !== 0 }"
+          class="w-64 my-2"
         >
           <div class="flex justify-center h-24">
             <img
@@ -80,15 +77,13 @@ export default {
               :alt="reason.key"
             />
           </div>
-          <div class="px-6 text-xl mdDown:text-lg">
-            {{ $t(`home.reasons.${reason.key}`) }}
-            <g-link
-              v-if="reason.link"
-              :to="reason.link"
-              class="no-underline mdUp:block"
-            >
-              {{ reason.linkText }}
-            </g-link>
+          <div class="px-6 mt-2">
+            <div class="mb-4 text-xl font-bold text-primary">
+              {{ $t(`home.reasons.${reason.key}.title`) }}
+            </div>
+            <div class="text-base font-normal">
+              {{ $t(`home.reasons.${reason.key}.desc`) }}
+            </div>
           </div>
           <br class="lgDown:hidden" :class="{ hidden: index > 3 }" />
         </div>
