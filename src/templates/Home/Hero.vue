@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <div :class="$style.hero" class="relative mt-44">
+  <div :class="$style.hero" class="relative -mt-3">
     <div class="container relative flex flex-col h-full mx-auto sm:text-center">
       <div class="z-10 max-w-sm pr-2 pt-28 sm:mt-12">
         <h2 class="mb-12 -mt-1 text-base italic font-light text-gray-strong">

@@ -53,7 +53,7 @@ query {
     z-index: -1;
     content: '';
     background-color: white;
-    transform: skewY(-5deg);
+    transform: skewY(-4.5deg);
     transform-origin: 50% 0;
   }
 
@@ -61,12 +61,12 @@ query {
     position: absolute;
     top: 25%;
     right: 0;
-    bottom: 36px;
+    bottom: 46px;
     left: 0;
     z-index: -1;
     content: '';
     background-color: white;
-    transform: skewY(5deg);
+    transform: skewY(4.5deg);
     transform-origin: 50% 0;
   }
 }
