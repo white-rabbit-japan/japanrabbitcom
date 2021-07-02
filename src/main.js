@@ -49,7 +49,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   addMeta('og:image:width', '1200')
   addMeta('og:image:height', '630')
 
-  head.bodyAttrs = { class: 'bg-gray-700' }
+  head.bodyAttrs = { class: 'bg-gray' }
 
   if (isClient) {
     setupAnalytics(Vue, router)

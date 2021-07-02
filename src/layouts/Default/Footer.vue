@@ -40,7 +40,7 @@ query {
 </static-query>
 
 <template>
-  <footer class="font-sans text-gray-strong bg-gray">
+  <footer class="font-sans text-gray-strong">
     <div
       class="container flex flex-col items-center justify-between pt-12 pb-8 mx-auto text-base sm:text-sm"
     >

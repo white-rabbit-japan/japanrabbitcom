@@ -26,7 +26,7 @@ query {
 </static-query>
 
 <template>
-  <Layout header-class="w-full xlUp:absolute xlUp:bg-transparent">
+  <Layout>
     <Hero />
 
     <Features />

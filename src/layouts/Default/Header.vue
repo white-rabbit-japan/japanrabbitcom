@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <header class="z-10 bg-primary">
+  <header class="z-10">
     <nav
       class="container flex flex-wrap items-center justify-between mx-auto mdUp:py-2 xlUp:py-4"
     >
