@@ -5,14 +5,55 @@ export default {
   name: 'DefaultFooter',
   components: { Logo },
   computed: {
-    siteLinks() {
-      return []
-    },
-    aboutLinks() {
+    supportLinks() {
       return [
         {
+          key: 'help',
+          to: '#',
+        },
+        {
+          key: 'fees',
+          to: '#',
+        },
+        {
           key: 'calculator',
-          to: 'https://app-staging.japanrabbit.com/shipping-calculator',
+          to: 'https://app.japanrabbit.com/shipping-calculator',
+        },
+        {
+          key: 'sitemap',
+          to: '#',
+        },
+      ]
+    },
+    companyLinks() {
+      return [
+        {
+          key: 'about',
+          to: 'https://www.whiterabbitexpress.com/about',
+        },
+        {
+          key: 'careers',
+          to: 'https://careers.whiterabbitexpress.com',
+        },
+        {
+          key: 'terms',
+          to: '#',
+        },
+      ]
+    },
+    sisterLinks() {
+      return [
+        {
+          text: 'Blackship',
+          to: 'https://blackship.com',
+        },
+        {
+          text: 'OMG Japan',
+          to: 'https://omgjapan.com',
+        },
+        {
+          text: 'White Rabbit Press',
+          to: 'https://whiterabbitpress.com',
         },
       ]
     },
@@ -42,16 +83,16 @@ query {
 <template>
   <footer class="font-sans text-gray-strong">
     <div
-      class="container flex flex-col items-center justify-between pt-12 pb-8 mx-auto text-base sm:text-sm"
+      class="container flex flex-col items-center justify-between pt-10 pb-10 mx-auto text-sm"
     >
       <div class="flex flex-row justify-between w-full mdDown:flex-col">
         <!-- MAIN -->
-        <div class="w-2/4 mdDown:w-auto">
-          <Logo class="w-40 mb-3 -mt-4 text-primary" alt="Japan Rabbit logo" />
-          <p class="pr-6 mt-6 mdUp:max-w-sm">
-            {{ $t('layouts.default.footer.siteDescription') }}
-          </p>
-          <div class="my-6">
+        <div class="w-1/4 pr-6 mdDown:w-auto">
+          <Logo
+            class="w-40 mb-3 -mt-4 -ml-2 transform scale-90 text-primary"
+            alt="Japan Rabbit logo"
+          />
+          <div class="pl-2 mt-8 mb-6">
             <g-link
               v-for="icon in sns"
               :key="icon.name"
@@ -61,66 +102,103 @@ query {
               <FA :name="icon.name" size="2x" fixed-width />
             </g-link>
           </div>
-          <div>
-            {{
-              $t('layouts.default.footer.copyright', [new Date().getFullYear()])
-            }}
-          </div>
+          <p class="mdUp:max-w-sm">
+            {{ $t('layouts.default.footer.siteDescription') }}
+          </p>
         </div>
 
         <hr class="my-6 border-gray-strong lgUp:hidden" />
 
-        <!-- ABOUT -->
-        <div class="w-1/4 mb-4 mdDown:w-auto">
-          <div class="mb-3 text-xl sm:text-lg">
-            {{ $t('layouts.default.footer.about') }}
+        <!-- SUPPORT -->
+        <div class="w-1/5 mb-4 mdDown:w-auto">
+          <div class="mb-3 text-lg font-bold uppercase text-primary sm:text-lg">
+            {{ $t('layouts.default.footer.support') }}
           </div>
           <ul>
             <li
-              v-for="link in aboutLinks"
-              :key="link.key"
-              class="pb-1 font-light"
+              v-for="link in supportLinks"
+              :key="link.key || link.text"
+              class="pb-3 font-light"
             >
               <g-link
                 :to="link.to"
-                class="no-underline hover:text-gray-strong"
-                >{{ $t('layouts.default.footer.' + link.key) }}</g-link
+                class="no-underline hover:text-primary text-gray-strong"
+                >{{
+                  link.text || $t('layouts.default.footer.' + link.key)
+                }}</g-link
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- COMPANY -->
+        <div class="w-1/5 mb-4 mdDown:w-auto">
+          <div class="mb-3 text-lg font-bold uppercase text-primary sm:text-lg">
+            {{ $t('layouts.default.footer.company') }}
+          </div>
+          <ul>
+            <li
+              v-for="link in companyLinks"
+              :key="link.key || link.text"
+              class="pb-3 font-lights"
+            >
+              <g-link
+                :to="link.to"
+                class="no-underline hover:text-primary text-gray-strong"
+                >{{
+                  link.text || $t('layouts.default.footer.' + link.key)
+                }}</g-link
               >
             </li>
           </ul>
         </div>
 
         <!-- SISTER -->
-        <div class="w-1/4 mdDown:w-auto">
-          <div class="mb-3 text-xl sm:text-lg">
+        <div class="w-1/5 mb-4 mdDown:w-auto">
+          <div class="mb-3 text-lg font-bold uppercase text-primary sm:text-lg">
             {{ $t('layouts.default.footer.sister') }}
           </div>
-          <p>
-            <a
-              href="https://blackship.com"
-              target="_blank"
-              rel="noopener"
-              class="font-light no-underline text-blackship"
+          <ul>
+            <li
+              v-for="link in sisterLinks"
+              :key="link.key || link.text"
+              class="pb-3 font-light"
             >
-              {{ $t('layouts.default.footer.blkTitle') }}
-            </a>
-          </p>
-          <p class="font-light">
-            {{ $t('layouts.default.footer.blkDesc') }}
-          </p>
+              <g-link
+                :to="link.to"
+                class="no-underline hover:text-primary text-gray-strong"
+                >{{
+                  link.text || $t('layouts.default.footer.' + link.key)
+                }}</g-link
+              >
+            </li>
+          </ul>
         </div>
 
         <hr class="my-6 border-gray-strong lgUp:hidden" />
       </div>
 
       <!-- TERMS -->
-      <ul class="flex text-sm font-light">
+      <!-- <ul class="flex text-sm font-light">
         <li v-for="link in siteLinks" :key="link.key" class="p-2">
           <g-link :to="link.to" class="no-underline hover:text-gray-strong">{{
             $t('layouts.default.footer.' + link.key)
           }}</g-link>
         </li>
-      </ul>
+      </ul> -->
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="text-white bg-primary">
+      <div class="container relative pt-4 pb-8 mx-auto text-center">
+        {{ $t('layouts.default.footer.copyright', [new Date().getFullYear()]) }}
+
+        <img
+          :src="require('~/assets/img/footer-art.svg')"
+          class="absolute top-0 right-0"
+          style="transform: translateY(-99%);"
+        />
+      </div>
     </div>
   </footer>
 </template>
