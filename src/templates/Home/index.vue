@@ -2,7 +2,7 @@
 import Hero from './Hero'
 import Features from './Features'
 import Why from './Why'
-import Reasons from './Reasons'
+import Process from './Process'
 import Reviews from './Reviews'
 import Quote from './Quote'
 
@@ -13,7 +13,7 @@ export default {
       title: this.$t('home.title'),
     }
   },
-  components: { Hero, Features, Why, Reasons, Reviews, Quote },
+  components: { Hero, Features, Why, Process, Reviews, Quote },
 }
 </script>
 
@@ -29,11 +29,11 @@ query {
   <Layout header-class="w-full xlUp:absolute xlUp:bg-transparent">
     <Hero />
 
-    <Reasons />
-
-    <Why />
-
     <Features />
+
+    <!-- <Process /> -->
+
+    <!-- <Why /> -->
 
     <!-- <Reviews /> -->
 

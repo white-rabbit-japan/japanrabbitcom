@@ -1,5 +1,5 @@
 <template functional>
-  <li class="text-lg text-center xlUp:mr-5 lgDown:mb-6">
+  <li class="text-base text-center xlUp:mr-5 lgDown:mb-6">
     <!-- v-scroll-to="link.to.startsWith('#') ? link.to : 'html'" -->
     <a
       v-if="props.to.includes(':')"

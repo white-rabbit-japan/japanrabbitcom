@@ -3,7 +3,7 @@ layouts:
     header:
       home: "Home"
       help: "Help"
-      cta: "Sign-in"
+      cta: "Sign in"
     footer:
       about: "About"
       sister: "Sister Company"
@@ -29,6 +29,16 @@ home:
     subtitle: "Formerly White Rabbit Express"
     cta: "Get Started"
   features:
+    title: "We’ll handle the ordering, payment, pickup, and shipping—so you don’t have to."
+    repack: "Free repacking"
+    consolidation: "Consolidation"
+    notifications: "Get Notifications"
+    mobile: "Mobile Friendly"
+    photos: "Package Photos"
+    addresses: "Multiple Shipping Addresses"
+    import: "Import from"
+    pricing: "Loyalty Rewards"
+  process:
     readReview: "Read full review on Trustpilot"
     storageFeat:
       title: "Free Storage for 45 days"
@@ -55,16 +65,6 @@ home:
     description: "We want to make forwarding from Japan as delightful and straightforward as possible. But we know you might have a few questions. Our Customer Service Team has the highest ratings in the industry. We are here to help."
     invitation: "If you tried our service way back when, we invite you to try it again. The new Japan Rabbit is unlike any earlier version. We’d love to welcome you back."
     cta: "Get Started"
-  reasons:
-    title: "More Reasons to Use Japan Rabbit"
-    repack: "Free repacking"
-    consolidation: "Consolidation"
-    notifications: "Get Notifications"
-    mobile: "Mobile Friendly"
-    photos: "Package Photos"
-    addresses: "Multiple Shipping Addresses"
-    import: "Import from"
-    pricing: "Loyalty Rewards"
   wre:
     title: "Need help buying from Japan?"
     subtitle: "White Rabbit Express takes the pain out of purchasing."

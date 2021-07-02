@@ -7,14 +7,14 @@
     <div class="mt-8 mb-4 text-2xl text-gray-strong">
       {{ parent.$t(`${props.tKey}.title`) }}
     </div>
-    <div class="max-w-sm mx-auto text-xl text-gray sm:text-lg">
+    <div class="max-w-sm mx-auto text-xl text-gray-strong sm:text-lg">
       {{ parent.$t(`${props.tKey}.shortDescription`) }}
     </div>
     <div class="mt-2 text-sm text-gray-strong">
       {{ parent.$t(`${props.tKey}.sub`) }}
     </div>
     <hr class="max-w-sm mx-auto mt-4 mb-2 border-gray-strong" />
-    <div class="relative max-w-sm mx-auto text-gray mdUp:text-left">
+    <div class="relative max-w-sm mx-auto text-gray-strong mdUp:text-left">
       <div class="text-sm text-center mdUp:pl-20">
         <div :class="$style.star" class="inline-block mdUp:absolute">
           <!-- <FA name="fas.star" size="2x" /> -->

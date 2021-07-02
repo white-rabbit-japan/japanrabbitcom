@@ -52,7 +52,7 @@ export default {
         </div>
 
         <ul
-          class="flex items-center flex-initial w-auto lgDown:w-full lgDown:mt-8"
+          class="flex items-center flex-initial w-auto -mt-8 uppercase lgDown:w-full lgDown:mt-8"
           :class="isMenuOpen ? 'lgDown:block' : 'lgDown:hidden'"
         >
           <!-- <NavLink :to="$tp('/')" t-key="home" /> -->
@@ -66,7 +66,7 @@ export default {
           <li class="lgDown:mb-5">
             <JrButton
               :text="$t('layouts.default.header.cta')"
-              class="table mx-auto xlUp:ml-8"
+              class="table mx-auto xlUp:ml-2"
               cta="login"
             />
           </li>

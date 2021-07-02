@@ -49,7 +49,7 @@ export default {
       ].map((reason) => {
         return {
           ...reason,
-          title: this.$t(`home.reasons.${reason.key}`),
+          title: this.$t(`home.features.${reason.key}`),
         }
       })
     },
@@ -60,10 +60,10 @@ export default {
 <template>
   <div>
     <div
-      class="container flex-wrap mx-auto my-24 text-center text-gray mdDown:pt-8"
+      class="container flex-wrap mx-auto mt-6 mb-24 text-center text-gray-strong mdDown:pt-8"
     >
-      <h3 class="mb-12 text-4xl mdDown:text-3xl">
-        {{ $t('home.reasons.title') }}
+      <h3 class="max-w-4xl mx-auto mb-16 text-3xl font-semibold text-primary">
+        {{ $t('home.features.title') }}
       </h3>
       <div class="flex flex-wrap">
         <div
@@ -81,7 +81,7 @@ export default {
             />
           </div>
           <div class="px-6 text-xl mdDown:text-lg">
-            {{ $t(`home.reasons.${reason.key}`) }}
+            {{ $t(`home.features.${reason.key}`) }}
             <g-link
               v-if="reason.link"
               :to="reason.link"
