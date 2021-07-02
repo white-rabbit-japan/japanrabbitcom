@@ -31,7 +31,10 @@ export default {
           :to="$tp('/')"
           aria-label="home"
         >
-          <Logo class="mt-1 w-36 text-primary" alt="Japan Rabbit logo" />
+          <Logo
+            class="mt-1 lgDown:transform lgDown:scale-50 text-primary"
+            alt="Japan Rabbit logo"
+          />
         </component>
       </div>
 
@@ -52,7 +55,7 @@ export default {
         </div>
 
         <ul
-          class="flex items-center flex-initial w-auto -mt-8 uppercase lgDown:w-full lgDown:mt-8"
+          class="flex items-center flex-initial w-auto -mt-8 uppercase lgDown:w-full lgDown:mt-0 lgDown:pb-8"
           :class="isMenuOpen ? 'lgDown:block' : 'lgDown:hidden'"
         >
           <!-- <NavLink :to="$tp('/')" t-key="home" /> -->

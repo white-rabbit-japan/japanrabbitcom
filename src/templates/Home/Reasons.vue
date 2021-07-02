@@ -67,7 +67,7 @@ export default {
         <div
           v-for="(reason, index) in reasons"
           :key="reason.key"
-          class="w-64 my-2"
+          class="w-64 my-2 sm:mx-auto"
         >
           <div class="flex justify-center h-24">
             <img
