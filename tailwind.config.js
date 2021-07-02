@@ -31,8 +31,8 @@ module.exports = {
       blackship: '#af75dd', // Blackship primary
       gray: {
         soft: '#F6F6F6',
-        DEFAULT: '#55555B',
-        strong: '#544E50',
+        DEFAULT: '#EBEBEB',
+        strong: '#55555B',
       },
     },
     screens: {

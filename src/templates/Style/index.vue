@@ -35,7 +35,7 @@ export default {
 <template>
   <Layout>
     <div>
-      <div class="container py-16 mx-auto text-gray sm:py-8">
+      <div class="container py-16 mx-auto text-gray-strong sm:py-8">
         <div class="text-left">
           <h2 :class="$style.title" class="mb-12">
             {{ $t('style.general.brandAndStyleGuide') }}

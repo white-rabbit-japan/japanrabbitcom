@@ -9,7 +9,7 @@ export default {
 <template>
   <div class="bg-gray-500" :class="$style.why">
     <div
-      class="container relative h-full mx-auto text-center text-gray"
+      class="container relative h-full mx-auto text-center text-gray-strong"
       :class="$style.container"
     >
       <div class="relative z-10 min-h-full">

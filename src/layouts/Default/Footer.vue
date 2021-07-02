@@ -40,7 +40,7 @@ query {
 </static-query>
 
 <template>
-  <footer class="font-sans text-white bg-gray-strong">
+  <footer class="font-sans text-gray-strong bg-gray">
     <div
       class="container flex flex-col items-center justify-between pt-12 pb-8 mx-auto text-base sm:text-sm"
     >
@@ -48,7 +48,7 @@ query {
         <!-- MAIN -->
         <div class="w-2/4 mdDown:w-auto">
           <Logo class="w-40 mb-3 -mt-4 text-primary" alt="Japan Rabbit logo" />
-          <p class="pr-6 mt-6 text-white mdUp:max-w-sm">
+          <p class="pr-6 mt-6 mdUp:max-w-sm">
             {{ $t('layouts.default.footer.siteDescription') }}
           </p>
           <div class="my-6">
@@ -56,23 +56,23 @@ query {
               v-for="icon in sns"
               :key="icon.name"
               :to="icon.to"
-              class="mr-5 text-xs text-white"
+              class="mr-5 text-xs text-gray-strong"
             >
               <FA :name="icon.name" size="2x" fixed-width />
             </g-link>
           </div>
-          <div class="text-white">
+          <div>
             {{
               $t('layouts.default.footer.copyright', [new Date().getFullYear()])
             }}
           </div>
         </div>
 
-        <hr class="my-6 border-white lgUp:hidden" />
+        <hr class="my-6 border-gray-strong lgUp:hidden" />
 
         <!-- ABOUT -->
         <div class="w-1/4 mb-4 mdDown:w-auto">
-          <div class="mb-3 text-xl text-white sm:text-lg">
+          <div class="mb-3 text-xl sm:text-lg">
             {{ $t('layouts.default.footer.about') }}
           </div>
           <ul>
@@ -83,7 +83,7 @@ query {
             >
               <g-link
                 :to="link.to"
-                class="text-white no-underline hover:text-gray-soft"
+                class="no-underline hover:text-gray-strong"
                 >{{ $t('layouts.default.footer.' + link.key) }}</g-link
               >
             </li>
@@ -92,7 +92,7 @@ query {
 
         <!-- SISTER -->
         <div class="w-1/4 mdDown:w-auto">
-          <div class="mb-3 text-xl text-white sm:text-lg">
+          <div class="mb-3 text-xl sm:text-lg">
             {{ $t('layouts.default.footer.sister') }}
           </div>
           <p>
@@ -105,22 +105,20 @@ query {
               {{ $t('layouts.default.footer.blkTitle') }}
             </a>
           </p>
-          <p class="font-light text-white">
+          <p class="font-light">
             {{ $t('layouts.default.footer.blkDesc') }}
           </p>
         </div>
 
-        <hr class="my-6 border-gray-soft lgUp:hidden" />
+        <hr class="my-6 border-gray-strong lgUp:hidden" />
       </div>
 
       <!-- TERMS -->
       <ul class="flex text-sm font-light">
         <li v-for="link in siteLinks" :key="link.key" class="p-2">
-          <g-link
-            :to="link.to"
-            class="text-white no-underline hover:text-gray-soft"
-            >{{ $t('layouts.default.footer.' + link.key) }}</g-link
-          >
+          <g-link :to="link.to" class="no-underline hover:text-gray-strong">{{
+            $t('layouts.default.footer.' + link.key)
+          }}</g-link>
         </li>
       </ul>
     </div>
