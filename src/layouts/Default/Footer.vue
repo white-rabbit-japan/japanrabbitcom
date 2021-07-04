@@ -33,7 +33,7 @@ export default {
         },
         {
           key: 'careers',
-          to: 'https://careers.whiterabbitexpress.com',
+          to: 'https://careers.whiterabbitjapan.com',
         },
         {
           key: 'terms',
