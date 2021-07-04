@@ -4,6 +4,32 @@ export default {
   data() {
     return {
       reasons: [
+        
+        {
+          key: 'payment',
+          image: 'payment.svg',
+          imageWidth: 80,
+        },
+        {
+          key: 'shipping',
+          image: 'shipping.svg',
+          imageWidth: 70,
+        },
+        {
+          key: 'auctions',
+          image: 'auctions.svg',
+          imageWidth: 80,
+        },
+        {
+          key: 'talkSellers',
+          image: 'talk-to-sellers.svg',
+          imageWidth: 80,
+        },
+        {
+          key: 'chat',
+          image: 'chat.svg',
+          imageWidth: 70,
+        },
         {
           key: 'preorders',
           image: 'preorder.svg',
@@ -19,31 +45,7 @@ export default {
           image: 'limited-editions.svg',
           imageWidth: 90,
         },
-        {
-          key: 'auctions',
-          image: 'auctions.svg',
-          imageWidth: 80,
-        },
-        {
-          key: 'talkSellers',
-          image: 'talk-to-sellers.svg',
-          imageWidth: 80,
-        },
-        {
-          key: 'payment',
-          image: 'payment.svg',
-          imageWidth: 80,
-        },
-        {
-          key: 'shipping',
-          image: 'shipping.svg',
-          imageWidth: 70,
-        },
-        {
-          key: 'chat',
-          image: 'chat.svg',
-          imageWidth: 70,
-        },
+
       ],
     }
   },
