@@ -25,6 +25,11 @@ export default {
   computed: {
     link() {
       if (this.cta) {
+        // TODO remove this
+        if (this.cta === 'signup') {
+          return '/request-access'
+        }
+
         return (this.baseUrl || this.$static.metadata.appUrl) + '/' + this.cta
       }
 
@@ -38,7 +43,15 @@ export default {
     :to="link"
     :target="cta ? '_self' : '_blank'"
     :class="[$style.button, success ? 'bg-success' : 'bg-primary']"
-    class="px-7 py-1.5 font-sans text-white no-underline rounded-2xl whitespace-nowrap"
+    class="
+      px-7
+      py-1.5
+      font-sans
+      text-white
+      no-underline
+      rounded-2xl
+      whitespace-nowrap
+    "
     v-bind="$attrs"
   >
     <slot>{{ text }}</slot>

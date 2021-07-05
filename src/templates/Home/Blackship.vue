@@ -10,7 +10,14 @@ export default {
 <template>
   <div class="container relative h-full pt-20 pb-40 mx-auto text-gray-strong">
     <div
-      class="flex items-center justify-center w-full lgUp:translate-x-20 lgUp:transform mdDown:flex-col mdDown:space-y-12"
+      class="
+        flex
+        items-center
+        justify-center
+        w-full
+        lgUp:translate-x-20 lgUp:transform
+        mdDown:flex-col mdDown:space-y-12
+      "
     >
       <div class="px-6">
         <Logo class="w-64 fill-current mdDown:mx-auto text-blackship" />
@@ -22,7 +29,7 @@ export default {
         <JrButton
           :text="$t('home.blackship.cta')"
           class="inline-block mt-8 text-xl"
-          cta="signup"
+          to="https://blackship.com"
           success
         />
       </div>

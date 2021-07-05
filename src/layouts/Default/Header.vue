@@ -74,7 +74,7 @@ export default {
           "
           :class="isMenuOpen ? 'lgDown:block' : 'lgDown:hidden'"
         >
-          <!-- <NavLink :to="$tp('/')" t-key="home" /> -->
+          <NavLink :to="$tp('/')" t-key="home" />
           <!-- <NavLink
           to="https://www.whiterabbitexpress.com/about/"
           t-key="aboutUs"

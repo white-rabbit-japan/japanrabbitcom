@@ -26,7 +26,7 @@ home:
   hero:
     title: "Anyone, anywhere can buy from Japan."
     subtitle: "Formerly White Rabbit Express"
-    cta: "Get Started"
+    cta: "Request Early Access"
   reasons:
     title: "We’ll handle the ordering, payment, pickup, and shipping—so you don’t have to."
     preorders:
@@ -70,7 +70,7 @@ home:
   why:
     title: "Delivering happiness from Japan since 2005"
     description: "As pioneers of proxy-buying in Japan, we lead on innovation and user experience. Our customer care wins the highest ratings in the industry."
-    cta: "Get Started"
+    cta: "Request Early Access"
     note: "We’ve helped tens of thousands of people in 140 countries purchase over 2 billion yen in goods from Japan."
   faq:
     title: "Frequently Asked Questions"
