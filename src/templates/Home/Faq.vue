@@ -37,7 +37,7 @@ export default {
 
 <template>
   <div class="waves-section">
-    <div class="container mx-auto">
+    <div class="container pb-10 mx-auto">
       <h3
         class="
           max-w-4xl
@@ -53,7 +53,7 @@ export default {
       <div
         class="
           max-w-3xl
-          px-2
+          px-10
           mx-auto
           text-xl
           font-normal
@@ -64,15 +64,15 @@ export default {
       </div>
 
       <div class="mt-12">
-        <div class="max-w-xl mx-auto bg-white border border-gray-200">
+        <div class="max-w-2xl mx-auto">
           <div
             v-for="(item, index) of items"
             :key="item.key"
-            class="relative border-b border-gray-200"
+            class="relative border-b border-opacity-20 border-primary"
           >
             <button
               type="button"
-              class="w-full px-8 py-6 text-left"
+              class="w-full py-4 text-left"
               @click="
                 selected !== item.key
                   ? (selected = item.key)
@@ -80,8 +80,17 @@ export default {
               "
             >
               <div class="flex items-center justify-between">
-                <span>{{ $t('home.faq.items.' + item.key + '.title') }}</span>
-                <span class="ico-plus"></span>
+                <span class="text-xl text-gray-strong">{{
+                  $t('home.faq.items.' + item.key + '.title')
+                }}</span>
+                <span :class="$style.icon">
+                  <i
+                    :class="{
+                      [$style.caret]: true,
+                      [$style.active]: selected === item.key,
+                    }"
+                  />
+                </span>
               </div>
             </button>
 
@@ -91,23 +100,25 @@ export default {
                 relative
                 overflow-hidden
                 transition-all
-                duration-700
+                duration-300
+                ease
                 max-h-0
               "
-              :style="
-                selected == item.key
-                  ? 'max-height: ' + $refs.containers[index].scrollHeight + 'px'
-                  : ''
-              "
+              :style="{
+                maxHeight:
+                  selected === item.key
+                    ? $refs.containers[index].scrollHeight + 'px'
+                    : '',
+              }"
             >
-              <div class="p-6">
+              <div class="p-6 text-lg text-gray-strong">
                 <template v-for="(part, index) of item.parts">
                   <p
                     v-if="typeof part === 'string'"
                     :key="part"
                     v-html="$t(`home.faq.items.${item.key}.${part}`)"
                   />
-                  <ul v-else :key="'list-' + index">
+                  <ul v-else :key="'list-' + index" :class="$style.list">
                     <li
                       v-for="subitem of part"
                       :key="`subitem-${index}-${subitem}`"
@@ -124,3 +135,45 @@ export default {
     </div>
   </div>
 </template>
+
+<style lang="scss" module>
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.caret {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: theme('colors.primary.DEFAULT');
+  border-radius: 100%;
+  transition: all 300ms ease;
+
+  &.active {
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    padding: 3px;
+    margin-left: -2px;
+    content: ' ';
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.list {
+  padding: 16px 0 16px 24px;
+  list-style: disc;
+  > li {
+    padding: 4px 0;
+  }
+}
+</style>

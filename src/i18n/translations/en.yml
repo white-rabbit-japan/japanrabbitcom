@@ -78,7 +78,7 @@ home:
     items:
       fees:
         title: "How much are your service fees?"
-        desc: "Can I buy pre-order items? What shops can I buy from? Do you handle Yahoo Auctions? Can I adjust the customs value of an order? How long can I store an item at White Rabbit Express? How much does international shipping cost?"
+        desc: "You can get an instant quote which includes our fees by adding a product from any Japanese online store to your cart. Once an item is added you will get a full breakdown of the costs minus international shipping. No account required!"
       preorders:
         title: "Can I buy pre-order items?"
         desc: "Yes, we can accept requests for pre-order items. You will pay for the item and our fees upfront, then international shipping once the item releases."
@@ -95,7 +95,7 @@ home:
         desc: 'Yes, we can adjust the item value. But we cannot mark items as “Gift”. You can tell us what value you’d like us to declare on your behalf. Please email us with undervalue requests immediately after you pay for international shipping. Lowering the value does have some consequences though so we recommend reading more at our <a href="https://support.japanrabbit.com">support site</a>.'
       storage:
         title: "How long can I store an item at Japan Rabbit?"
-        desc: "We can store items for up to 30 days after they arrive. This means you can wait and consolidate packages to save on international shipping."
+        desc: "We can store items for up to 45 days after they arrive. This means you can wait and consolidate packages to save on international shipping."
       shipping:
         title: "How much does international shipping cost?"
         desc: "We ship internationally using the following Japan Post shipping methods:"
@@ -108,7 +108,7 @@ home:
         subitem7: "Printed Matter Registered Airmail"
         subitem8: "Printed Matter Registered SAL"
         subitem9: "We can also ship by FedEx International Economy"
-        note: 'Estimate shipping costs from Japan with our <a href="https://app.japanrabbit.com/shipping-calculator">Shipping Calculator.</a>'
+        note: 'Estimate shipping costs from Japan with our <a href="https://app.japanrabbit.com/shipping-calculator">Shipping Calculator</a>.'
   blackship:
     text: "Package forwarding from Japan."
     cta: "Get an Address in Japan!"
