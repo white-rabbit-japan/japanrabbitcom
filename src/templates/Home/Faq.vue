@@ -80,7 +80,7 @@ export default {
               "
             >
               <div class="flex items-center justify-between">
-                <span class="text-xl text-gray-strong">{{
+                <span class="pr-4 text-xl text-gray-strong">{{
                   $t('home.faq.items.' + item.key + '.title')
                 }}</span>
                 <span :class="$style.icon">
@@ -141,7 +141,7 @@ export default {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.5rem;
+  min-width: 1.5rem;
   height: 1.5rem;
 }
 
