@@ -23,7 +23,15 @@ export default {
 <template>
   <header class="z-10">
     <nav
-      class="container flex flex-wrap items-center justify-between mx-auto mdUp:py-2 xlUp:py-4"
+      class="
+        container
+        flex flex-wrap
+        items-center
+        justify-between
+        mx-auto
+        mdUp:py-2
+        xlUp:py-4
+      "
     >
       <div>
         <component
@@ -39,7 +47,7 @@ export default {
       </div>
 
       <template v-if="!hideLinks">
-        <div class="hidden lgDown:block sm:-mr-4">
+        <div class="hidden lgDown:block smDown:-mr-4">
           <button
             :class="{
               [$style.hamburger]: true,
@@ -55,7 +63,15 @@ export default {
         </div>
 
         <ul
-          class="flex items-center flex-initial w-auto -mt-8 uppercase lgDown:w-full lgDown:mt-0 lgDown:pb-8"
+          class="
+            flex
+            items-center
+            flex-initial
+            w-auto
+            -mt-8
+            uppercase
+            lgDown:w-full lgDown:mt-0 lgDown:pb-8
+          "
           :class="isMenuOpen ? 'lgDown:block' : 'lgDown:hidden'"
         >
           <!-- <NavLink :to="$tp('/')" t-key="home" /> -->

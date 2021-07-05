@@ -1,4 +1,5 @@
 const breakpoints = {
+  xs: '374px',
   sm: '640px',
   md: '768px',
   lg: '960px',
@@ -40,6 +41,7 @@ module.exports = {
       },
     },
     screens: {
+      smUp: { max: breakpoints.xs },
       mdUp: { min: breakpoints.sm },
       lgUp: { min: breakpoints.md },
       xlUp: { min: breakpoints.lg },
@@ -50,12 +52,14 @@ module.exports = {
       xlDown: { max: breakpoints.xl },
       lgDown: { max: breakpoints.lg },
       mdDown: { max: breakpoints.md },
+      smDown: { max: breakpoints.sm },
 
       xxl: { max: breakpoints.xxl, min: breakpoints.xl },
       xl: { max: breakpoints.xl, min: breakpoints.lg },
       lg: { max: breakpoints.lg, min: breakpoints.md },
       md: { max: breakpoints.md, min: breakpoints.sm },
-      sm: { max: breakpoints.sm }, // sm ONLY
+      sm: { max: breakpoints.sm, min: breakpoints.xs },
+      xs: { max: breakpoints.xs }, // xs ONLY
     },
     fontFamily: {
       sans: [

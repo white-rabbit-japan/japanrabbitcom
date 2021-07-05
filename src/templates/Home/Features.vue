@@ -30,22 +30,30 @@ export default {
 </script>
 
 <template>
-  <div class="relative py-6 my-48 sm:py-8 bg-gray-soft" :class="$style.waves">
+  <div
+    class="relative py-6 my-48 smDown:py-8 bg-gray-soft"
+    :class="$style.waves"
+  >
     <div class="container mx-auto">
       <h3
-        class="max-w-4xl mx-auto text-3xl font-semibold text-center mb-28 text-primary"
+        class="
+          max-w-4xl
+          mx-auto
+          text-3xl
+          font-semibold
+          text-center
+          mb-28
+          text-primary
+        "
       >
         {{ $t('home.features.title') }}
       </h3>
-      <div
-        style="max-width: 722px;"
-        class="mx-auto space-y-6 mdDown:space-y-16"
-      >
+      <div style="max-width: 722px" class="mx-auto space-y-6 mdDown:space-y-16">
         <div
           v-for="(feat, index) in features"
+          :key="feat.key"
           class="flex items-center justify-between mdDown:flex-col"
           :class="index % 2 === 0 ? 'flex-row-reverse' : ''"
-          :key="feat.key"
         >
           <div class="px-2 text-center">
             <img
@@ -55,7 +63,14 @@ export default {
             />
           </div>
           <div
-            class="items-center px-2 py-4 mdDown:text-center max-w-80 mdDown:max-w-full"
+            class="
+              items-center
+              px-2
+              py-4
+              mdDown:text-center
+              max-w-80
+              mdDown:max-w-full
+            "
           >
             <div class="mb-4 text-3xl font-bold text-primary">
               {{ $t(`home.features.${feat.key}.title`) }}

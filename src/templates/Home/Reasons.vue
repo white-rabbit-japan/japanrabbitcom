@@ -4,7 +4,6 @@ export default {
   data() {
     return {
       reasons: [
-        
         {
           key: 'payment',
           image: 'payment.svg',
@@ -45,7 +44,6 @@ export default {
           image: 'limited-editions.svg',
           imageWidth: 90,
         },
-
       ],
     }
   },
@@ -55,7 +53,14 @@ export default {
 <template>
   <div>
     <div
-      class="container mx-auto mt-6 mb-24 text-center text-gray-strong mdDown:pt-8"
+      class="
+        container
+        mx-auto
+        mt-6
+        mb-24
+        text-center text-gray-strong
+        mdDown:pt-8
+      "
     >
       <h3 class="max-w-4xl mx-auto text-3xl font-semibold mb-28 text-primary">
         {{ $t('home.reasons.title') }}
@@ -64,7 +69,7 @@ export default {
         <div
           v-for="(reason, index) in reasons"
           :key="reason.key"
-          class="w-64 my-2 sm:mx-auto"
+          class="w-64 my-2 smDown:mx-auto"
         >
           <div class="flex justify-center h-24">
             <img
