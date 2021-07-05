@@ -99,7 +99,8 @@ query {
           flex flex-row
           justify-between
           w-full
-          lgDown:flex-wrap lgDown:gap-2
+          lgDown:flex-wrap
+          mdDown:flex-col mdDown:gap-2 mdDown:items-center
         "
       >
         <!-- MAIN -->
@@ -123,10 +124,20 @@ query {
           </p>
         </div>
 
-        <hr class="w-full my-6 border-gray-strong xlUp:hidden" />
+        <hr
+          class="
+            w-full
+            my-6
+            border-gray-strong
+            xlUp:hidden
+            mdDown:border-transparent
+          "
+        />
 
         <!-- SUPPORT -->
-        <div class="w-1/5 mb-4 whitespace-nowrap">
+        <div
+          class="w-1/5 mb-4 mdDown:w-2/5 whitespace-nowrap mdDown:text-center"
+        >
           <div
             class="mb-3 text-lg font-bold uppercase text-primary lgDown:text-lg"
           >
@@ -150,7 +161,9 @@ query {
         </div>
 
         <!-- COMPANY -->
-        <div class="w-1/5 mb-4 whitespace-nowrap">
+        <div
+          class="w-1/5 mb-4 mdDown:w-2/5 whitespace-nowrap mdDown:text-center"
+        >
           <div
             class="mb-3 text-lg font-bold uppercase text-primary lgDown:text-lg"
           >
@@ -174,7 +187,9 @@ query {
         </div>
 
         <!-- SISTER -->
-        <div class="w-1/5 mb-4 whitespace-nowrap">
+        <div
+          class="w-1/5 mb-4 mdDown:w-2/5 whitespace-nowrap mdDown:text-center"
+        >
           <div
             class="mb-3 text-lg font-bold uppercase text-primary lgDown:text-lg"
           >
@@ -215,7 +230,14 @@ query {
 
         <img
           :src="require('~/assets/img/footer-art.svg')"
-          class="absolute top-0 right-12"
+          class="
+            absolute
+            top-0
+            right-12
+            w-72
+            lgDown:w-56
+            mdDown:w-40 mdDown:right-2
+          "
           style="transform: translateY(-99%)"
           width="294"
         />
