@@ -68,17 +68,10 @@ home:
       title: "100% money back guarantee"
       desc: "We buy your item, or you pay nothing."
   why:
-    title: "Why Japan Rabbit?"
-    description: "We want to make forwarding from Japan as delightful and straightforward as possible. But we know you might have a few questions. Our Customer Service Team has the highest ratings in the industry. We are here to help."
-    invitation: "If you tried our service way back when, we invite you to try it again. The new Japan Rabbit is unlike any earlier version. We’d love to welcome you back."
+    title: "Delivering happiness from Japan since 2005"
+    description: "As pioneers of proxy-buying in Japan, we lead on innovation and user experience. Our customer care wins the highest ratings in the industry."
     cta: "Get Started"
-  wre:
-    title: "Need help buying from Japan?"
-    subtitle: "White Rabbit Express takes the pain out of purchasing."
-    cta: "Learn More"
-  reviews:
-    title: "Thousands of people trust Japan Rabbit"
-    outOf: "{0} out of {1}"
+    note: "We’ve helped tens of thousands of people in 140 countries purchase over 2 billion yen in goods from Japan."
   blackship:
     text: "Package forwarding from Japan."
     cta: "Get an Address in Japan!"

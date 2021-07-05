@@ -30,10 +30,7 @@ export default {
 </script>
 
 <template>
-  <div
-    class="relative py-6 my-48 smDown:py-8 bg-gray-soft"
-    :class="$style.waves"
-  >
+  <div class="waves-section">
     <div class="container mx-auto">
       <h3
         class="
@@ -84,27 +81,3 @@ export default {
     </div>
   </div>
 </template>
-
-<style lang="scss" module>
-.waves {
-  &::before {
-    position: absolute;
-    top: -100px;
-    width: 100%;
-    height: 100px;
-    content: '';
-    background-image: url(/img/wave-upper.svg);
-    background-repeat: repeat-x;
-  }
-
-  &::after {
-    position: absolute;
-    bottom: -100px;
-    width: 100%;
-    height: 100px;
-    content: '';
-    background-image: url(/img/wave-lower.svg);
-    background-repeat: repeat-x;
-  }
-}
-</style>
