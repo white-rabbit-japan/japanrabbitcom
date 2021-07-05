@@ -17,8 +17,8 @@ module.exports = {
         '4xl+': '2.5rem',
       },
       maxWidth: {
-        '48': '12rem',
-        '80': '20rem',
+        48: '12rem',
+        80: '20rem',
       },
     },
     colors: {
@@ -29,7 +29,7 @@ module.exports = {
         soft: '#F64934',
       },
       success: {
-        DEFAULT: '#06B53C'
+        DEFAULT: '#06B53C',
       },
       transparent: 'transparent',
       blackship: '#af75dd', // Blackship primary
@@ -59,7 +59,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Proxima Nova',
+        'proxima-nova',
         'Open Sans',
         'Roboto',
         '-apple-system',
@@ -132,8 +132,9 @@ module.exports = {
         'g-image',
         'g-image--lazy',
         'g-image--loaded',
-        /^fa-/, /-fa$/
+        /^fa-/,
+        /-fa$/,
       ],
-    }
-  }
+    },
+  },
 }
