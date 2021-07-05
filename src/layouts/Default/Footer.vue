@@ -83,10 +83,24 @@ query {
 <template>
   <footer class="font-sans text-gray-strong">
     <div
-      class="container flex flex-col items-center justify-between pt-10 pb-10 mx-auto text-sm"
+      class="
+        container
+        flex flex-col
+        items-center
+        justify-between
+        pt-10
+        pb-10
+        mx-auto
+        text-sm
+      "
     >
       <div
-        class="flex flex-row justify-between w-full lgDown:flex-wrap lgDown:gap-2"
+        class="
+          flex flex-row
+          justify-between
+          w-full
+          lgDown:flex-wrap lgDown:gap-2
+        "
       >
         <!-- MAIN -->
         <div class="w-1/4 pr-6 lgDown:w-full">
@@ -146,7 +160,7 @@ query {
             <li
               v-for="link in companyLinks"
               :key="link.key || link.text"
-              class="pb-3 font-lights"
+              class="pb-3 font-light"
             >
               <g-link
                 :to="link.to"
@@ -201,8 +215,9 @@ query {
 
         <img
           :src="require('~/assets/img/footer-art.svg')"
-          class="absolute top-0 right-0"
-          style="transform: translateY(-99%);"
+          class="absolute top-0 right-12"
+          style="transform: translateY(-99%)"
+          width="294"
         />
       </div>
     </div>
