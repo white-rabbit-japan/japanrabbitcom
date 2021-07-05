@@ -1,80 +1,126 @@
 <script>
-import JrButton from '~/components/JrButton'
-
 export default {
-  components: { JrButton },
+  name: 'HomeFaq',
+  data() {
+    return {
+      selected: null,
+      items: [
+        {
+          key: 'fees',
+          parts: ['desc'],
+        },
+        {
+          key: 'preorders',
+          parts: ['desc'],
+        },
+        {
+          key: 'shops',
+          parts: ['desc', 5],
+        },
+        {
+          key: 'value',
+          parts: ['desc'],
+        },
+        {
+          key: 'storage',
+          parts: ['desc'],
+        },
+        {
+          key: 'shipping',
+          parts: ['desc', 9, 'note'],
+        },
+      ],
+    }
+  },
 }
 </script>
 
 <template>
-  <div class="bg-gray-500" :class="$style.why">
-    <div
-      class="container relative flex flex-wrap h-full mx-auto text-gray-strong lgUp:items-center mdDown:pt-8 mdDown:text-center"
-    >
-      <div class="z-10 max-w-xl xxlDown:max-w-md mdDown:max-w-full lgUp:pr-4">
-        <h3 class="mb-4 text-4xl mdDown:text-3xl">
-          {{ $t('home.why.title') }}
-        </h3>
-        <p class="text-xl mdDown:text-lg">
-          {{ $t('home.why.description') }}
-        </p>
-        <p class="mt-4 text-xl mdDown:text-lg">
-          {{ $t('home.why.invitation') }}
-        </p>
-        <JrButton
-          :text="$t('home.why.cta')"
-          class="inline-block mt-8"
-          cta="signup"
-        />
+  <div class="waves-section">
+    <div class="container mx-auto">
+      <h3
+        class="
+          max-w-4xl
+          mx-auto
+          mb-4
+          text-3xl
+          font-semibold
+          text-center text-primary
+        "
+      >
+        {{ $t('home.faq.title') }}
+      </h3>
+      <div
+        class="
+          max-w-3xl
+          px-2
+          mx-auto
+          text-xl
+          font-normal
+          text-center text-gray-strong
+        "
+      >
+        {{ $t(`home.faq.description`) }}
       </div>
-      <img
-        :src="require('~/assets/img/home/sakura-art.svg')"
-        class="absolute z-0"
-        width="940"
-        alt="sakura tree and drone"
-        :class="$style.whyImage"
-      />
+
+      <div class="mt-12">
+        <div class="max-w-xl mx-auto bg-white border border-gray-200">
+          <div
+            v-for="(item, index) of items"
+            :key="item.key"
+            class="relative border-b border-gray-200"
+          >
+            <button
+              type="button"
+              class="w-full px-8 py-6 text-left"
+              @click="
+                selected !== item.key
+                  ? (selected = item.key)
+                  : (selected = null)
+              "
+            >
+              <div class="flex items-center justify-between">
+                <span>{{ $t('home.faq.items.' + item.key + '.title') }}</span>
+                <span class="ico-plus"></span>
+              </div>
+            </button>
+
+            <div
+              ref="containers"
+              class="
+                relative
+                overflow-hidden
+                transition-all
+                duration-700
+                max-h-0
+              "
+              :style="
+                selected == item.key
+                  ? 'max-height: ' + $refs.containers[index].scrollHeight + 'px'
+                  : ''
+              "
+            >
+              <div class="p-6">
+                <template v-for="(part, index) of item.parts">
+                  <p
+                    v-if="typeof part === 'string'"
+                    :key="part"
+                    v-html="$t(`home.faq.items.${item.key}.${part}`)"
+                  />
+                  <ul v-else :key="'list-' + index">
+                    <li
+                      v-for="subitem of part"
+                      :key="`subitem-${index}-${subitem}`"
+                    >
+                      {{ $t(`home.faq.items.${item.key}.subitem${subitem}`) }}
+                    </li>
+                  </ul>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
-
-<style lang="scss" module>
-.why {
-  height: 570px;
-
-  @screen mdDown {
-    height: 760px;
-  }
-
-  @screen sm {
-    height: 730px;
-  }
-}
-
-.whyImage {
-  top: 26px;
-  right: -110px;
-
-  // @screen xxlDown {
-
-  // }
-
-  @screen xlDown {
-    top: 50px;
-    right: -200px;
-    width: 830px;
-  }
-
-  @screen lgDown {
-    top: 110px;
-    right: -260px;
-    width: 700px;
-  }
-
-  @screen mdDown {
-    top: initial;
-    right: -16px;
-    bottom: 0;
-  }
-}
-</style>

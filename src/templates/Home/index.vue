@@ -35,7 +35,7 @@ query {
 
     <Why />
 
-    <!-- <Faq /> -->
+    <Faq />
 
     <Blackship />
   </Layout>
